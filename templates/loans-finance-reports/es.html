@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap');
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /* box general */
+    .box-general {
+      text-align: center;
+      background-color: #ffffff;
+    }
+    .box-general > h4 {
+      border-top: 4px solid rgb(252, 76, 2);
+      padding-top: 20px;
+      text-align: center !important;
+        }
+
+    .shadow {
+      width: 603px;
+      border-top: 2px solid #f9f9f9;
+      border-left: 2px solid #f9f9f9;
+      border-right: 2px solid #ececec;
+      border-bottom: 2px solid #ececec;
+      background-color: #ffffff;
+    }
+
+    .logo-clip {
+      margin: 30px 0 30px 0;
+      width: 56px;
+    }
+
+    .link-report {
+      margin-top: 20px;
+      color: #455A64;
+      font-size: 18px;
+      margin-left: 10%;
+      width: 80%;
+      display: block;
+      margin-bottom: 30px;
+      letter-spacing: 0;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body style="background:#F8FBFE;">
+  <center>
+    <img class="logo-clip" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/clip-logo.png" alt="logo-clip">
+    <div class="shadow">
+      <div class="box-general" >
+        <h4>
+            {{report_message}}
+        </h4>
+        <b class="link-report">{{report_url}}</b>
+      </div>
+    </div>
+  </center>
+</body>
+</html>

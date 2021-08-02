@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>📦  ¡Tu pedido fue entregado!</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow:700|Barlow:600|Barlow:500" rel="stylesheet">
+    <style>
+        .main-container-email {
+            margin: auto;
+            max-width: 640px;
+            min-height: 942px;
+            font-family: 'Barlow', sans-serif;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: normal;
+            border: solid 0.5px #dddddd;
+            background-color: #ffffff;
+            border-top: solid 2px #fc4c02;
+        }
+
+        .main-container-email .weight-500 {
+            font-weight: 500;
+        }
+
+        .main-container-email .weight-600 {
+            font-weight: 600;
+        }
+
+        .main-container-email a {
+            text-decoration: none;
+            color: #0074b7;
+        }
+
+        .main-container-email .logo img {
+            margin: 50px auto 0;
+            display: block;
+        }
+
+        .main-container-email .header {
+            margin: auto;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            text-align: center;
+            color: #001724;
+        }
+
+        .main-container-email .flow-image img {
+            margin: auto;
+            display: block;
+            width: 100%;
+            max-width: 262px;
+        }
+
+        .main-container-email .flow-image table {
+            margin: auto;
+            width: 100%;
+            max-width: 290px;
+            text-align: center;
+        }
+
+        .main-container-email .flow-image table td {
+            width: 33.3%;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.92;
+        }
+
+        .main-container-email .message {
+            margin: 6% 4%;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.39;
+            color: #001724;
+            text-align: center;
+        }
+
+        .main-container-email .message p {
+            margin: .25em;
+        }
+
+        .main-container-email .order-detail {
+            margin: 8% 11.5%;
+        }
+
+        .main-container-email .order-detail table {
+            margin: auto;
+            margin-top: 18px;
+            width: 100%;
+            max-width: 560px;
+            text-align: center;
+            border-spacing: 0;
+            background-color: #fff6f2;
+            border-radius: 10px;
+            font-weight: normal;
+            padding: 6px 24px 12px;
+        }
+
+        .main-container-email .order-detail table th {
+            font-size: 14px;
+            line-height: 1.92;
+        }
+
+        .main-container-email .order-detail table td {
+            font-size: 14px;
+            line-height: 1.64;
+            color: #001724;
+            padding: 12px 0 12px 0;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .main-container-email .order-detail table tr.line th,
+        .main-container-email .order-detail table tr.line td {
+            border-bottom: solid 0.5px #ffddce;
+        }
+
+        .main-container-email .order-detail table tr.line th {
+            color: #fc4c02;
+            font-weight: normal;
+            text-align: left;
+            padding: 12px 0;
+        }
+
+        .main-container-email .order-detail table tr.line th.order-number {
+            color: #001724;
+            text-align: right;
+        }
+
+        .main-container-email .order-detail table td.order-title {
+            text-align: left;
+            text-transform: uppercase;
+            color: #fc4c02;
+            font-weight: bold;
+            padding: 12px 0;
+        }
+
+        .main-container-email .order-detail table td.total-title {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.44;
+            text-align: right;
+            color: #fc4c02;
+        }
+
+        .main-container-email .order-detail table td img {
+            width: auto;
+            max-width: 64px;
+            margin-right: 24px;
+        }
+
+        .main-container-email .order-detail table td.total-value {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.44;
+            color: #001724;
+        }
+
+        .main-container-email .link-tips {
+            margin: 8% auto;
+            text-align: center;
+        }
+
+        .main-container-email .link-tips a {
+            background-color: #fff;
+            border: 2px solid #0074b7;
+            border-radius: 25px;
+            color: #0074b7;
+            padding: 12px 24px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: normal;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .main-container-email .text-footer {
+            background-color: #e6f1f7;
+            padding: 17px 34px;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.8;
+            text-align: center;
+            color: #001724;
+            margin: 8% 0 6%;
+        }
+
+        .main-container-email .text-footer a {
+            color: #0074b7;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .main-container-email .social-networks table {
+            margin: auto;
+            width: 100%;
+            max-width: 166px;
+            text-align: center;
+            border-spacing: 0;
+        }
+
+        .main-container-email .social-networks img {
+            width: 30px;
+            height: 32px;
+        }
+
+        .main-container-email .copyrights table {
+            margin: auto;
+            width: 100%;
+            max-width: 468px;
+            margin-top: 20px;
+            margin-bottom: 62px;
+            border-spacing: 0;
+            text-align: center;
+        }
+
+        .main-container-email .copyrights table a,
+        .main-container-email .copyrights table td,
+        .main-container-email .copyrights table span {
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.8;
+            color: #4d5d66;
+        }
+
+        .main-container-email .copyrights table a {
+            color: #0074b7;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container-email">
+        <div class="logo">
+            <a href="https://clip.mx/" target="_blank">
+                <img
+                    class="max-width"
+                    border="0"
+                    src="https://dev-ses-email-templates-assets.s3.amazonaws.com/logistics-images/logo-clip.png"
+                    alt=""
+                    data-proportionally-constrained="true"
+                    width="64"
+                    height="64"
+                />
+            </a>
+        </div>
+        <div class="header">
+            <p>¡Tu pedido fue entregado!</p>
+        </div>
+        <div class="flow-image">
+            <img
+                src="https://dev-ses-email-templates-assets.s3.amazonaws.com/logistics-images/tracker-order-delivered.png">
+            <table>
+                <tr>
+                    <td style="text-align: left; color:#0074b7; font-weight: 600;">Procesado</td>
+                    <td style="color:#0074b7; font-weight: 600;">¡En camino!</td>
+                    <td style="text-align: right; color:#0074b7; font-weight: 600;">Entregado</td>
+                </tr>
+            </table>
+        </div>
+        <div class="message">
+            <p>Hola, <span class="weight-500">{{customer.first_name}}</span></p>
+            <p>
+                Tu pedido <span class="weight-600">#{{orderInfo.order_number}}</span> ya se entregó. Esperamos que lo disfrutes.
+            </p>
+            <p>
+                ¡Gracias por confiar en Clip!
+            </p>
+        </div>
+        <div class="order-detail">
+            <table class="detail">
+                <tr>
+                    <td colspan="4" class="order-title">Productos Entregados</td>
+                </tr>
+                {{#each orderInfo.products}}
+                <tr class="line">
+                    <td rowspan="3" style="text-align: left; width: 20%;">
+                        <img src="https://dev-ses-email-templates-assets.s3.amazonaws.com/logistics-images/{{product_id}}.png" />
+                    </td>
+                    <td colspan="3" style="text-align: left; font-weight: 600;">{{name}}</td>
+                </tr>
+                <tr class="line">
+                    <td colspan="2" style="text-align: left; font-weight: 500; color:#fc4c02;">Cantidad:</td>
+                    <td colspan="1" style="text-align: right;">{{quantity}}</td>
+                </tr>
+                <tr class="line">
+                    <td colspan="2" style="text-align: left; font-weight: 500; color:#fc4c02;">Precio:</td>
+                    <td colspan="1" style="text-align: right;">{{amount}}</td>
+                </tr>
+                {{/each}}
+                <tr>
+                    <td class="total-title" colspan="3" style="text-align: left;">Total:</td>
+                    <td class="total-value" style="text-align: right;">{{orderInfo.total_amount}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="link-tips">
+            <a target="blank" href="https://blog.clip.mx/tag/tips-de-negocios">Encuentra tips para tu negocio</a>
+        </div>
+        <div class="text-footer">
+            <p>¿Necesitas ayuda? Customer Happiness&reg; te atiende 24/7, todo el año. Escríbenos por WhatsApp o llámanos
+                al <a target="blank" href="https://wa.me/5215563932323">55 6393-2323</a>. Envía un correo a
+                <a target="blank" href="mailto:help@clip.mx">help@clip.mx</a> o solicita apoyo al chat de
+                <a target="blank" href="https://clip.mx/">clip.mx</a>.
+            <p>
+        </div>
+        <div class="social-networks">
+            <table>
+                <tr>
+                    <td><a target="blank" href="https://www.facebook.com/clipmx"><img
+                                src="https://marketing-image-production.s3.amazonaws.com/uploads/2a74f6875ea6749dd9272acab46c3be4c44a31d005b33d8316b292a42444cb6619d467fab82586ddc7dd758c3c14ab4f7d2c872268d9e45591fb5303a20f37e4.png"></a>
+                    </td>
+                    <td><a target="blank" href="https://twitter.com/clip_mx"><img
+                                src="https://marketing-image-production.s3.amazonaws.com/uploads/d6ca0c60e72cd18e7d2158ae12168faa3e3ff215d527cdc1a6c2b6e24df9ff38fa91a34adaa1dfb6dec90aaea470b29630cd108ca0d0b1dfd4c2d199eafd7d50.png"></a>
+                    </td>
+                    <td><a target="blank" href="https://www.youtube.com/user/clipmx/"><img
+                                src="https://marketing-image-production.s3.amazonaws.com/uploads/fc3cdd0800d301e0a5bdbe8fe14061c5fe575917f6ec6f6ebf7bd3b6b2d7d4ac4cad603054c4a77e6694403e01edad6978e880f086bc29465d91217546080a07.png"></a>
+                    </td>
+                    <td><a target="blank" href="https://www.instagram.com/clip.mx/"><img
+                                src="https://marketing-image-production.s3.amazonaws.com/uploads/87c9307f1a8210b7cdd2254b58d24d3c31935e968b0dada225e00f19eeb5622c15ec0bf108220914f65e487ce5f32d72bb7b97a412e204bfde8163560ea475d8.png"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="copyrights">
+            <table>
+                <tr>
+                    <td>
+                        <span>Copyright 2021 PayClip, Inc.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="blank" href="https://clip.mx/privacidad">Aviso de Privacidad</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a target="blank" href="https://clip.mx/terminos">Términos y Condiciones</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

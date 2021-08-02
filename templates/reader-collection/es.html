@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!--<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+      body {width: 600px;margin: 0 auto;}
+      table {border-collapse: collapse;}
+      table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+      img {-ms-interpolation-mode: bicubic;}
+    </style>
+    <![endif]-->
+
+  <style type="text/css">
+    body,
+    p,
+    div {
+      font-family: arial;
+      font-size: 14px;
+    }
+
+    body {
+      color: #000000;
+      margin : 0px;
+    }
+
+    body a {
+      color: #1188E6;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    table.wrapper {
+      width: 100% !important;
+      table-layout: fixed;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    img.max-width {
+      max-width: 100% !important;
+    }
+
+    .column.of-2 {
+      width: 50%;
+    }
+
+    .column.of-3 {
+      width: 33.333%;
+    }
+
+    .column.of-4 {
+      width: 25%;
+    }
+
+    .step-number {
+      display: flex;
+      align-items : center;
+      justify-content: center;
+      border-radius : 100%;
+      width : 32px;
+      height : 32px;
+      background : #feede5;
+      color : #fc4c02;
+      font-weight: 900;
+      font-size : 20px;
+      margin : 0 auto;
+    }
+
+    .step-container {
+      display : flex;
+      align-items : flex-start;
+      padding : 0px 8px;
+    }
+
+    .step-message {
+      margin-left : 20px;
+    }
+
+    .step-choices {
+      display : flex;
+      justify-content: space-between;
+    }
+
+    .step-choices > div {
+      padding : 0px 10px;
+      margin-right : 20px;
+    }
+
+    .contact-title {
+      padding: 0px 100px;
+    }
+
+    .contact-instructions {
+      padding : 32px 26px;
+    }
+
+    .contact-item {
+      width: auto;
+      margin: 22px auto;
+      display: table;
+    }
+
+    .contact-item img {
+      width : 36px;
+      height: 36px;
+      object-fit: contain;
+      margin-right : 22px;
+    }
+
+    .contact-item span {
+      width : 215px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    @media screen and (max-width:480px) {
+      .contact-instructions {
+        padding: 16px 16px 48px 16px;
+      }
+
+      .contact-title {
+        padding: 0px 16px;
+      }
+
+      .step-container {
+        display : block;
+        text-align: center;
+      }
+
+      .step-number {
+        margin-bottom : 15px;
+      }
+
+      .step-message {
+        margin-left: 0px;
+      }
+
+      .step-choices {
+        display : block;
+      }
+
+      .step-choices > div {
+        margin : 15px 0px;
+      }
+
+      .step-choice-bullet {
+        display: none;
+      }
+
+      .preheader .rightColumnContent,
+      .footer .rightColumnContent {
+        text-align: left !important;
+      }
+
+      .preheader .rightColumnContent div,
+      .preheader .rightColumnContent span,
+      .footer .rightColumnContent div,
+      .footer .rightColumnContent span {
+        text-align: left !important;
+      }
+
+      .preheader .rightColumnContent,
+      .preheader .leftColumnContent {
+        font-size: 80% !important;
+        padding: 5px 0;
+      }
+
+      table.wrapper-mobile {
+        width: 100% !important;
+        table-layout: fixed;
+      }
+
+      img.max-width {
+        height: auto !important;
+        max-width: 480px !important;
+      }
+
+      a.bulletproof-button {
+        display: block !important;
+        width: auto !important;
+        font-size: 80%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .columns {
+        width: 100% !important;
+      }
+
+      .column {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+  </style>
+  <!--user entered Head Start-->
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Barlow Font -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Barlow', 'Roboto', sans-serif !important;
+    }
+
+    .padded-container {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+
+    .desktop-hero-image {
+      display: block;
+    }
+
+    .mobile-hero-image {
+      display: none;
+    }
+
+    .footer-social-images-container a {
+      color: white;
+    }
+
+    .footer-social-images-container img {
+      width: 32px;
+      height: 32px;
+      margin-left: 0;
+      margin-right: 16px;
+    }
+
+    .footer-app-stores-container {
+      text-align: right;
+    }
+
+    .footer-app-stores-container a {
+      color: white;
+    }
+
+    .footer-app-stores-container img {
+      height: 32px;
+      margin-left: 10px;
+      margin-right: 0;
+    }
+
+    .footer-links {
+      text-align: right;
+    }
+
+    .footer-links a {
+      color: #455A64;
+    }
+
+    @media only screen and (max-width:480px) {
+      .padded-container {
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+      }
+
+      .desktop-hero-image {
+        display: none !important;
+      }
+
+      .mobile-hero-image {
+        display: block !important;
+      }
+
+      .footer-social-images-container {
+        margin-left: 16px !important;
+      }
+
+      .footer-app-stores-container {
+        margin-top: 24px !important;
+        margin-left: 6px !important;
+        text-align: left !important;
+      }
+
+      .footer-copyright {
+        margin-left: 16px !important;
+      }
+
+      .footer-links {
+        text-align: left !important;
+        margin-left: 16px;
+      }
+
+      .footer-links .footer-links-separator {
+        display: none !important;
+      }
+
+      .footer-links a {
+        margin-top: 16px !important;
+        display: block !important;
+      }
+    }
+  </style>
+  <!--End Head user entered-->
+</head>
+
+<body>
+  <center class="wrapper" data-link-color="#1188E6"
+    data-body-style="font-size: 14px; font-family: arial; color: #000000; background-color: #f8fbfe;">
+    <div class="webkit">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="wrapper" bgcolor="#f8fbfe">
+        <tr>
+          <td valign="top" bgcolor="#f8fbfe" width="100%">
+            <table width="100%" role="content-container" class="outer" align="center" cellpadding="0" cellspacing="0"
+              border="0">
+              <tr>
+                <td width="100%">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td>
+                        <!--[if mso]>
+                          <center>
+                          <table><tr><td width="600">
+                          <![endif]-->
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                          style="width: 100%; max-width:600px;" align="center">
+                          <tr>
+                            <td role="modules-container"
+                              style="padding: 0px 0px 0px 0px; color: #000000; text-align: left;" bgcolor="#ffffff"
+                              width="100%" align="left">
+
+                              <table class="module preheader preheader-hide" role="module" data-type="preheader"
+                                border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="display: none !important; mso-hide: all; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;">
+                                <tr>
+                                  <td role="module-content">
+                                    <p></p>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
+                                cellspacing="0" width="100%" style="table-layout: fixed;">
+                                <tr>
+                                  <td style="padding:0px 0px 0px 0px;" role="module-content" height="100%" valign="top"
+                                    bgcolor="">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                      height="4px" style="line-height:4px; font-size:4px;">
+                                      <tr>
+                                        <td style="padding: 0px 0px 4px 0px;" bgcolor="#f76b1c"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0"
+                                cellspacing="0" width="100%" style="table-layout: fixed;">
+                                <tr>
+                                    <td
+                                        style="font-size:6px;line-height:10px;padding:24px 0px 12px 0px;"
+                                        valign="top" align="center">
+                                        <img class="max-width" border="0"
+                                        style="display:block;color:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;font-size:16px;"
+                                        src="https://marketing-image-production.s3.amazonaws.com/uploads/a508b9f5236d2f421e130f6d8a232eca1c53541f8b55cbfc6177c163f28b12d6faa85663a7c815bb4aa708702ff2f7240b603a160e97aab4bcb50918fc65f8ff.png"
+                                        alt="" width="68" height="68">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                  <td style="padding:18px 25px 18px 25px;text-align:inherit;"
+                                    height="100%" valign="top" bgcolor="">
+                                    <div style="text-align: center; font-size: 30px; color: #001724;">
+                                      <strong>
+                                          HOLA <br />
+                                          {{merchant_name}}
+                                      </strong>
+                                    </div>
+
+                                    <div style="text-align: center; margin-top : 16px;"><span style="font-size:18px; line-height: 1.39;"><span
+                                          style="color:#001724;">
+                                          Para que podamos recolectar tu Clip, te pedimos que sigas los siguientes pasos:
+                                        </span></span>
+                                    </div>
+
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table style="margin-top: 31px; margin-bottom: 40px;" class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                cellspacing="0" width="100%" style="table-layout: fixed;">
+                                <tr>
+                                  <td style="font-size:6px;line-height:10px;"
+                                    valign="top" align="center">
+                                    <a href="{{guide_path}}" target="_blank">
+                                      <img class="max-width" border="0"
+                                        style="display:block;color:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;font-size:16px;"
+                                        src="{{assetsUrl}}group.png"
+                                        alt="" width="174" height="186" />
+                                      </a>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                cellspacing="0" width="100%" style="table-layout: fixed;">
+                                <tr>
+                                  <td>
+                                    <div class="step-container">
+                                        <div>
+                                          <img style="width: 32px; height: 32px; object-fit: contain;" src="{{assetsUrl}}bullet1.png">
+                                        </div>
+                                        <div class="step-message" style="font-size:18px; line-height: 1.39;"><span
+                                            style="color:#001724;">
+                                            Imprime la guía adjunta. La hoja #1 debes colocarla en el paquete y la hoja #2 debes entregarla al mensajero de DHL.
+                                        </span></div>
+                                    </div>
+
+                                    <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table class="module" style="margin-top : 56px;" role="module" data-type="code" border="0" cellpadding="0"
+                              cellspacing="0" width="100%" style="table-layout: fixed;">
+                                <tr>
+                                  <td>
+                                    <div class="step-container">
+                                        <div>
+                                          <img style="width: 32px; height: 32px; object-fit: contain;" src="{{assetsUrl}}bullet2.png">
+                                        </div>
+                                        <div class="step-message"><span style="font-size:18px; line-height: 1.39; color: #001724;">
+                                            <span>Envía tu paquete</span>
+                                            <div class="step-choices" style="margin-top: 24px;">
+                                              <div style="display:flex; align-items:flex-start;">
+                                                <span style="margin-right: 15px; font-size : 22px;" class="step-choice-bullet">•</span>
+                                                <span style="font-size:18px; line-height: 1.39; color:#001724;">
+                                                  Puedes programar la recolección con DHL al teléfono: 55 5345 7000
+                                                </span>
+                                              </div>
+                                              <div style="display:flex; align-items:flex-start;">
+                                                <span style="margin-right: 15px; font-size : 22px;" class="step-choice-bullet">•</span>
+                                                <span style="font-size:18px; line-height: 1.39; color:#001724;">
+                                                  O lleva tu Clip con las etiquetas a la sucursal DHL más cercana.
+                                                </span>
+                                              </div>
+                                            </div>
+                                        </span></div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table style="margin-top: 68px;" class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                  cellspacing="0" width="100%" style="table-layout: fixed;">
+                                <tr>
+                                  <td>
+                                    <div>
+                                        <div style="text-align: center; font-size:18px;" class="contact-title">
+                                          <strong>¿Dudas? Nuestro equipo de Customer Happiness está para ayudarte</strong>
+                                        </div>
+
+                                        <div style="margin-top: 24px; margin-bottom: 68px;">
+                                          <div class="contact-item">
+                                            <img src="{{assetsUrl}}whatsapp.png" />
+                                            <span style="font-size: 16px; color: #323232">
+                                              WhatsApp: <a href="https://wa.me/525563932323">55 6393 2323</a>
+                                            </span>
+                                          </div>
+                                          <div class="contact-item">
+                                            <img src="{{assetsUrl}}call.png" />
+                                            <span style="font-size: 16px; color: #323232">
+                                              Llámanos: <a href="tel:5563932323">55 6393 2323</a>
+                                            </span>
+                                          </div>
+                                          <div class="contact-item">
+                                            <img src="{{assetsUrl}}email.png" />
+                                            <span style="font-size: 16px; color: #323232">
+                                              Escríbenos: <a href="mailto:help@clip.mx">help@clip.mx</a>
+                                            </span>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                role="module" data-type="columns" data-version="2"
+                                style="background-color:#f5f7fa;box-sizing:border-box;">
+                                <tr>
+                                  <td>
+                                    <div style="font-size: 13px; color: #001724; line-height: 1.46; text-align:center;" class="contact-instructions">
+                                      <div>
+                                        Si tienes alguna pregunta, nuestro equipo de Customer Happiness está listo para ayudarte.
+                                      </div>
+                                      <div>
+                                        Llámanos de lunes a viernes 8:30 a.m. a 8:30 p.m. sábados y domingos: 10 a.m. a 5 p.m. o escríbenos por Whatsapp al
+                                        <a href="https://wa.me/525563932323" target="_blank">55 6393-2323</a>. También nos puedes mandar un email a
+                                        <a href="mailto:help@clip.mx" target="_blank">help@clip.mx</a> y escríbenos por webchat en
+                                        <a href="https://clip.mx" target="_blank">www.clip.mx</a>
+                                      </div>
+                                      <br />
+                                      <div>
+                                        Consulta <a href="https://ayuda.clip.mx" target="_blank">ayuda.clip.mx</a> para más información.
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                role="module" data-type="columns" data-version="2"
+                                style="padding:40px 0px 0px 0px;box-sizing:border-box;">
+                                <tr role='module-content'>
+                                  <td height="100%" valign="top">
+                                    <!--[if (gte mso 9)|(IE)]>
+              <center>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-spacing:0;border-collapse:collapse;table-layout: fixed;" >
+                  <tr>
+            <![endif]-->
+
+                                    <!--[if (gte mso 9)|(IE)]>
+      <td width="300.000px" valign="top" style="padding: 0px 0px 0px 0px;border-collapse: collapse;" >
+    <![endif]-->
+
+                                    <table
+                                      style="width:100%; border-spacing:0;border-collapse:collapse;margin:0px 0px 0px 0px;"
+                                      cellpadding="0" cellspacing="0" align="left" border="0" class="column column-0 of-2
+                  empty">
+                                      <tr>
+                                        <td style="padding:0px;margin:0px;border-spacing:0;">
+                                          <table class="module" role="module" data-type="code" border="0"
+                                            cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                            <tr>
+                                              <td height="100%" valign="top">
+                                                <div style="padding: 10px; text-align: center;" class="footer-social-images-container">
+                                                  <a href="https://www.facebook.com/clipmx">
+                                                    <img
+                                                      src="https://marketing-image-production.s3.amazonaws.com/uploads/2a74f6875ea6749dd9272acab46c3be4c44a31d005b33d8316b292a42444cb6619d467fab82586ddc7dd758c3c14ab4f7d2c872268d9e45591fb5303a20f37e4.png">
+                                                  </a>
+
+                                                  <a href="https://twitter.com/clip_mx">
+                                                    <img
+                                                      src="https://marketing-image-production.s3.amazonaws.com/uploads/d6ca0c60e72cd18e7d2158ae12168faa3e3ff215d527cdc1a6c2b6e24df9ff38fa91a34adaa1dfb6dec90aaea470b29630cd108ca0d0b1dfd4c2d199eafd7d50.png">
+                                                  </a>
+
+                                                  <a href="https://www.youtube.com/user/clipmx/">
+                                                    <img
+                                                      src="https://marketing-image-production.s3.amazonaws.com/uploads/fc3cdd0800d301e0a5bdbe8fe14061c5fe575917f6ec6f6ebf7bd3b6b2d7d4ac4cad603054c4a77e6694403e01edad6978e880f086bc29465d91217546080a07.png">
+                                                  </a>
+
+                                                  <a href="https://www.instagram.com/clip.mx/">
+                                                    <img
+                                                      src="https://marketing-image-production.s3.amazonaws.com/uploads/87c9307f1a8210b7cdd2254b58d24d3c31935e968b0dada225e00f19eeb5622c15ec0bf108220914f65e487ce5f32d72bb7b97a412e204bfde8163560ea475d8.png">
+                                                  </a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <!--[if (gte mso 9)|(IE)]>
+      </td>
+    <![endif]-->
+                                    <!--[if (gte mso 9)|(IE)]>
+      <td width="300.000px" valign="top" style="padding: 0px 0px 0px 0px;border-collapse: collapse;" >
+
+                                    <!--[if (gte mso 9)|(IE)]>
+      </td>
+    <![endif]-->
+                                    <!--[if (gte mso 9)|(IE)]>
+                  <tr>
+                </table>
+              </center>
+            <![endif]-->
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <table style="margin-top: 21px; margin-bottom: 54px;" border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                role="module" data-version="2"
+                                style="padding:0px 0px 40px 0px;box-sizing:border-box;">
+                                <tr role='module-content'>
+                                  <td height="100%" valign="top">
+                                    <!--[if (gte mso 9)|(IE)]>
+              <center>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-spacing:0;border-collapse:collapse;table-layout: fixed;" >
+                  <tr>
+            <![endif]-->
+
+                                    <!--[if (gte mso 9)|(IE)]>
+      <td width="300.000px" valign="top" style="padding: 0px 0px 0px 0px;border-collapse: collapse;" >
+    <![endif]-->
+
+                                    <table
+                                      style="width:100%;border-spacing:0;border-collapse:collapse;margin:0px 0px 0px 0px;"
+                                      cellpadding="0" cellspacing="0" align="left" border="0">
+                                      <tr>
+                                        <td style="padding:0px;margin:0px;border-spacing:0;">
+                                          <table class="module" role="module" data-type="code" border="0"
+                                            cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                            <tr>
+                                              <td height="100%" valign="top" style="text-align:center;">
+                                                <div class="footer-copyright"><span
+                                                    style="font-size:14px; color: rgb(68, 90, 100); background-color: transparent;">Copyright
+                                                    2018 PayClip, Inc.</span></div>
+                                                <div>&nbsp;</div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <!--[if (gte mso 9)|(IE)]>
+      </td>
+    <![endif]-->
+                                    <!--[if (gte mso 9)|(IE)]>
+      <td width="300.000px" valign="top" style="padding: 0px 0px 0px 0px;border-collapse: collapse;" >
+    <![endif]-->
+
+                                    <table
+                                      style="width:100%;border-spacing:0;border-collapse:collapse;margin:0px 0px 0px 0px;"
+                                      cellpadding="0" cellspacing="0" align="left" border="0">
+                                      <tr>
+                                        <td style="padding:0px;margin:0px;border-spacing:0;">
+                                          <table class="module" role="module" data-type="code" border="0"
+                                            cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                            <tr>
+                                              <td height="100%" valign="top">
+                                                <div class="footer-links;" style="text-align:center;">
+                                                  <a style="font-size:14px; color: rgb(68, 90, 100); text-decoration: none; background-color: transparent;"
+                                                    href="https://clip.mx/privacidad">Aviso de Privacidad</a>
+                                                  <span class="footer-links-separator">&nbsp; |&nbsp;</span>
+                                                  <a style="font-size:14px; color: rgb(68, 90, 100); text-decoration: none; background-color: transparent;"
+                                                    href="https://clip.mx/terminos">Términos y condiciones</a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+
+                                    <!--[if (gte mso 9)|(IE)]>
+      </td>
+    <![endif]-->
+                                    <!--[if (gte mso 9)|(IE)]>
+                  <tr>
+                </table>
+              </center>
+            <![endif]-->
+                                  </td>
+                                </tr>
+                              </table>
+
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso]>
+                          </td></tr></table>
+                          </center>
+                          <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </center>
+</body>
+
+</html>

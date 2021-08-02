@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /* general */
+    .shadow {
+      width: 60%;
+      border-top: 2px solid #f9f9f9;
+      border-left: 2px solid #f9f9f9;
+      border-right: 2px solid #ececec;
+      border-bottom: 2px solid #ececec;
+      background-color: #ffffff;
+    }
+
+    .general {
+      text-align: justify;
+      padding-bottom: 15px;
+      border-top: #0288D1 solid 4px;
+      background-color: #ffffff;
+    }
+
+    .box {
+      text-align: justify;
+      width: 60%;
+    }
+
+    /* content */
+    .title {
+      font-size: 36px;
+      letter-spacing: 0.57px;
+      margin: 40px 10% 40px 10%;
+      text-align: center;
+      color: #455A64;
+      font-weight: 500;
+      line-height: 40px;
+    }
+
+    .logo-clip {
+      margin: 30px 0 30px 0;
+      width: 56px;
+    }
+
+    .text-decoration {
+      color: #0288d1 !important;
+      text-decoration: none;
+    }
+
+    /* footer */
+    .footer-container {
+      height: 50px;
+    }
+
+    .footer-container .copyright {
+      float: left;
+    }
+
+    .footer-container .privacity,
+    .footer-container .separator,
+    .footer-container .terms {
+      float: right;
+    }
+
+    @media only screen and (max-width: 680px) {
+
+      .box,
+      .shadow {
+        width: 90%;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+
+      .box,
+      .general {
+        text-align: justify;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .footer-container {
+        height: 100%;
+      }
+
+      .footer-container .copyright,
+      .footer-container .privacity,
+      .footer-container .separator,
+      .footer-container .terms {
+        float: none;
+        display: block;
+        margin-top: 15px;
+      }
+
+      .footer-container .separator {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body style="background:#F8FBFE;">
+  <center>
+    <img class="logo-clip" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/clip-logo.png"
+      alt="logo-clip">
+    <div class="shadow">
+      <div class="general">
+        <div>
+          <h1 class="title">Estamos revisando tu solicitud</h1>
+          <h3 style="color: #455A64;
+            font-size: 18px;
+            margin-left: 10%;
+            width: 80%;
+            display: block;
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 0.3px;">Hola, {{merchant_name}}.</h3>
+          <span style="color: #455A64;
+            font-size: 18px;
+            margin-left: 10%;
+            width: 80%;
+            display: block;
+            margin-bottom: 40px;
+            letter-spacing: 0;
+            font-weight: 300;
+            line-height: 30px;">Estamos revisando tus documentos. En un máximo de 2 días hábiles, te estaremos
+            informando por correo el status de tu solicitud.</span>
+          <span style="color: #455A64;
+            font-size: 18px;
+            margin-left: 10%;
+            width: 80%;
+            display: block;
+            margin-bottom: 10px;
+            letter-spacing: 0;
+            font-weight: 300;
+            line-height: 30px;">Gracias por tu confianza.</span>
+          <span style="color: #455A64;
+            font-size: 18px;
+            margin-left: 10%;
+            width: 80%;
+            display: block;
+            margin-bottom: 20px;
+            letter-spacing: 0;
+            font-weight: 300;
+            line-height: 30px;">Clip</span>
+          <div style="text-align: center">
+            <img class="divisor-clip" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/divisor.png"
+              alt="divisor" style="padding: 24px 0 32px; width: 100%; height: auto; max-width: 530px;" />
+          </div>
+          <span style="color: #455A64;
+            font-size: 16px;
+            margin-left: 10%;
+            width: 80%;
+            display: block;
+            margin-bottom: 30px;
+            letter-spacing: 0;
+            font-weight: 300;
+            line-height: 23px;">
+            <p>
+              Si tienes alguna pregunta, nuestro equipo de Customer
+              Happiness está listo para ayudarte.
+              Llámanos de lunes a viernes de 8:30 a.m. a 8:30 p.m.
+              sábados y domingos de 10 a.m a 5 p.m o escríbenos por
+              Whatsapp al
+              <a href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data="
+                style="color: #0288d1; text-decoration: none; cursor: pointer;">
+                55 6393 2323</a>. También nos puedes mandar un email a
+              <a href="mailto:help@clip.mx"
+                style="color: #0288d1; text-decoration: none; cursor: pointer;">help@clip.mx</a>
+              y escribirnos por webchat en
+              <a href="https://clip.mx/" target="_blank"
+                style="color: #0288d1; text-decoration: none; cursor: pointer;">www.clip.mx</a>.
+            </p>
+            <br>
+            <p style="text-align: center;">
+              Consulta
+              <a href="https://ayuda.clip.mx" target="_blank"
+                style="color: #0288d1; text-decoration: none; cursor: pointer;">ayuda.clip.mx</a>
+              para más información.
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div style="display: block; margin: 22px auto 0;">
+        <div>
+          <a style="margin: 0 5px 0 5px" href="https://www.facebook.com/clipmx/" target="_blank"><img width="32"
+              height="32" alt="facebook"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/facebook-icon.png" /></a>
+          <a style="margin: 0 5px 0 5px" href="https://twitter.com/clip_mx/" target="_blank"><img width="32" height="32"
+              alt="twitter" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/twitter-icon.png" /></a>
+          <a style="margin: 0 5px 0 5px" href="https://www.youtube.com/user/clipmx/" target="_blank"><img width="32"
+              height="32" alt="youTube"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/youtube-icon.png" /></a>
+          <a style="margin: 0 5px 0 5px" href="https://www.instagram.com/clip.mx/" target="_blank"><img width="32"
+              height="32" alt="instagram"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/instagram-icon.png" /></a>
+        </div>
+      </div>
+      <div class="footer-container"
+        style="display: block; padding-top: 10px; margin-top: 10px; color:#455a64; font-size: 14px; font-weight: 300; letter-spacing:0; line-height:18px; text-decoration:none; border-top: 1px solid #cccccc;">
+        <span class="copyright">
+          Copyright 2019 PayClip, Inc.
+        </span>
+        <span class="privacity">
+          <a href="https://clip.mx/privacidad/" target="_blank"
+            style="color: #455a64; font-weight: 300; font-size: 14px; letter-spacing: 0; line-height: 18px; padding-bottom: 24px; cursor: none; text-decoration: none;">
+            Aviso de Privacidad
+          </a>
+        </span>
+        <span class="separator">
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        </span>
+        <span class="terms">
+          <a href="https://clip.mx/terminos/" target="_blank"
+            style="color: #455a64; font-weight: 300; font-size: 14px; letter-spacing: 0; line-height: 18px; padding-bottom: 24px; cursor: none; text-decoration: none;">
+            Términos y Condiciones
+          </a>
+        </span>
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>

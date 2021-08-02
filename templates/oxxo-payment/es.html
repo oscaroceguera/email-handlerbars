@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!--<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+      body {width: 600px;margin: 0 auto;}
+      table {border-collapse: collapse;}
+      table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+      img {-ms-interpolation-mode: bicubic;}
+    </style>
+    <![endif]-->
+
+  <!-- Reset CSS -->
+  <style type="text/css">
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+      v2.0 | 20110126
+      License: none (public domain)
+    */
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+  </style>
+  <!-- Barlow Font -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <!--user entered Head Start-->
+  <style>
+    * {
+      font-family: Barlow, sans-serif !important;
+    }
+
+    a:visited {
+      color: #0288D1;
+      text-decoration: none;
+    }
+  </style>
+  <!--End Head user entered-->
+</head>
+
+<body style="background:#F8FBFE;">
+  <center>
+    <table cellpadding="0" cellspacing="0" border="0"
+      style="font-size: 16px; color: #001724; width: 100%; max-width:600px; background-color: #ffffff; margin: 8px 0 30px 0; border-top: 2px solid #f54b5e; border-right: 1px solid #eceff1; border-left: 1px solid #eceff1; border-bottom: 1px solid #eceff1"
+      align="center">
+      <tr>
+        <td style="text-align: center; padding: 50px 0 31px;"><img src="{{assetsUrl}}/oxxo-payment/clipOxxo.png"
+            alt="logo-clip" class="logo" width="228"></td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 0 6%;">
+          <h1
+            style="color: #323232; letter-spacing: 0.8px; margin: 0 0 34px; display: block; font-size: 32px; font-weight: bold;">
+            {{#if dayOne}}
+            ¡Tu Clip te está esperando!
+            {{/if}}
+            {{#if dayFive}}
+            Aún quedan 3 días para comprar <br /> tu Clip con OXXO Pay
+            {{/if}}
+            {{#if dayEight}}
+            Oh no, tu número <br />de referencia expiró
+            {{/if}}
+          </h1>
+          <span style="color: #323232; font-size: 18px; margin: 16px 0 32px; display: block; line-height: 25px;">
+            {{#if firstName}}
+            Hola {{firstName}}, <br />
+            {{/if}}
+            {{#if dayCero}}
+            Está todo listo para que puedas pagar tu Clip en tu OXXO<br />más cercano. <a
+              href="https://www.google.com.mx/maps/search/oxxo/"
+              style="color: #0288d1; text-decoration: none">Encuéntralo aquí</a>.
+            {{/if}}
+            {{#if dayOne}}
+            Está todo listo para que puedas pagar tu Clip en tu OXXO<br />más cercano. <a
+              href="https://www.google.com.mx/maps/search/oxxo/"
+              style="color: #0288d1; text-decoration: none">Encuéntralo aquí</a>.
+            {{/if}}
+            {{#if dayFive}}
+            No pierdas la oportunidad de hacer crecer tu negocio con Clip.<br />Corre a tu OXXO más cercano. <a
+              href="https://www.google.com.mx/maps/search/oxxo/"
+              style="color: #0288d1; text-decoration: none">Encuéntralo aquí</a>.
+            {{/if}}
+            {{#if dayEight}}
+            ¡Genera una nueva orden de compra y comienza a hacer crecer tu negocio con Clip!
+            {{/if}}
+          </span>
+        </td>
+      </tr>
+      {{#if dayEight}}
+      <tr>
+        <td>
+          <a href="{{shopAppLink}}"
+            style="text-align:center; color: #FFF; background: #0288D1; font-weight: BOLD; text-decoration: none; width: 260px; height: 47px; display: block; border-radius: 4px; line-height: 47px; margin: 0 auto 30px; font-size: 16px; padding: 0 16px">GENERAR
+            NUEVA ORDEN</a>
+        </td>
+      </tr>
+      {{else}}
+      <tr>
+        <td>
+          <div style="font-size: 14px; padding: 10px; width: 320px; border-radius: 4px; color: #fc4c02; background-color: #feede6; margin: auto; text-align: center;">
+            Válido hasta el:
+            <table style="margin: 15px auto; width: 100%">
+              <tr>
+                <td style="font-size: 16px; width: 50%; padding: 0 8% 0 0; text-align: right"><img width="16"
+                    src="{{assetsUrl}}/oxxo-payment/calendar@2x.png" /> {{validDate}}</td>
+                <td style="font-size: 16px; width: 50%; padding: 0 0 0 8%; text-align: left"><img width="16"
+                    src="{{assetsUrl}}/oxxo-payment/clock@2x.png" /> {{validTime}}</td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 0 10%; color: #001724">
+          <div style="margin: auto; width: 60%; padding: 40px 20px; text-align: center; font-weight: bold; font-size: 14px; color: #001724">
+            Monto a pagar
+            <div style="font-size: 28px; margin-top: 10px; color: #001724">${{amount}}</div>
+            <div style="font-size: 14px; font-weight: normal; margin-top: 10px; color: #001724">+ <span style="font-weight: bold">$12</span> de
+              comisión adicional</div>
+          </div>
+          <table style="width: 100%; font-size: 18px; line-height: 25px; text-align: left">
+            <tr>
+              <td style="padding-right: 10px; vertical-align: top;">1.</td>
+              <td>Indica en caja que quieres realizar un pago de OXXO Pay y muestra el {{#if barcodeUrl}}código de barras o el {{/if}}número de referencia:</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 0 0 30px; color: #001724">
+          {{#if barcodeUrl}}
+          <div style="font-size: 14px; padding-top: 32px; font-weight:600; text-align: center;">
+            Código de barras <br />
+            <img src="{{barcodeUrl}}" style="margin-top: 14px;"/> 
+          </div>
+          {{/if}}
+          <div style="font-size: 14px; font-weight:600; text-align: center; margin-top: 30px">
+            Número de referencia
+            {{#if formatedReference}}
+            <div style="font-size: 24px; font-weight: bold; margin: 20px auto 0; width: 320px;">
+              {{#each formatedReference}}
+                <div style="display: inline-block; width: 65px; color: #fff; border-radius: 4px; background-color: #001724; font-size: 20px; font-weight: bold; margin: 0 2px; padding: 2px 0; text-align: center">
+                  {{this}}
+                </div>
+              {{/each}}  
+            </div>
+            {{else}}
+            <div style="font-size: 24px; font-weight: bold; margin-top: 20px; word-spacing: 10px">{{reference}}</div>
+            {{/if}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 0 10% 16px; color: #001724">
+          <table style="width: 100%; font-size: 18px; line-height: 25px; text-align: left">
+            <tr>
+              <td style="padding-right: 10px; vertical-align: top;">2.</td>
+              <td>Realiza tu pago en efectivo y el cajero te entregará un comprobante. Verifica que tu pago se haya
+                realizado correctamente.</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 0 10% 50px; color: #001724">
+          <table style="width: 100%; font-size: 18px; line-height: 25px; text-align: left">
+            <tr>
+              <td style="padding-right: 8px; vertical-align: top;">3.</td>
+              <td>En el momento que tu pago se vea reflejado en nuestro sistema te enviaremos un correo electrónico con los detalles de
+              tu pedido y envío.</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      {{/if}}
+      {{#if products}}
+      <tr>
+        <td>
+          <div style="min-width: 318px; font-size: 18px; font-weight:bold; width: 85%; margin: auto;">
+            Resumen de tu pedido
+          </div>
+          {{#each products}}
+          <table style="min-width: 318px; width: 75%; text-align: center; margin: 13px auto 8px">
+            <tr style="font-size: 14px;">
+              <td style="width: 10%;">
+                <img src="{{assetsUrl}}/oxxo-payment/{{productId}}.png" style="width: 71px" />
+              </td>
+              <td style="width: 45%; color: #001724; text-transform: capitalize; text-align: left;">
+                <div style="font-size: 16px;">
+                  {{productName}}
+                </div>
+                Cantidad: {{productQuantity}}
+              </td>
+              <td style="width: 45%;  text-align: right; font-size: 18px;">
+                <div>
+                  ${{calculatedAmount}}
+                </div>
+              </td>
+            </tr>
+          </table>
+          {{/each}}
+          <div style="min-width: 318px; font-size: 18px; font-weight:bold; width: 75%; margin: 8px auto; border-top: 1px solid #dddddd;">
+            <table style="text-align: center; margin-bottom: 8px; margin-top: 13px; width: 100%;">
+              <tr style="font-size: 14px;">
+                <td style="width: 50%; text-align: left; font-size: 16px; ">
+                  Total
+                </td>
+                <td style="color: #323232; font-size: 18px;text-align: right; width: 50%;">${{amount}}</td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      {{/if}}
+      <tr>
+        <td style="text-align: center;">
+          <div style="display: block; margin:70px auto 0">
+            <div style="display: inline-block;padding: 0 25px 8px;">
+              <a href="https://www.facebook.com/clipmx/" target="_blank"
+                style="text-decoration: none; margin-right: 10px;">
+                <img alt="facebook" src="{{assetsUrl}}/common/facebook.png" width="30" />
+              </a>
+              <a href="https://twitter.com/clip_mx/" target="_blank" style="text-decoration: none; margin-right: 10px;">
+                <img alt="twitter" src="{{assetsUrl}}/common/twitter.png" width="30" />
+              </a>
+              <a href="https://www.youtube.com/user/clipmx/" target="_blank"
+                style="text-decoration: none; margin-right: 10px;">
+                <img alt="youTube" src="{{assetsUrl}}/common/youtube.png" width="30" />
+              </a>
+              <a href="https://www.instagram.com/clip.mx/" target="_blank" style="text-decoration: none;">
+                <img alt="instagram" src="{{assetsUrl}}/common/instagram.png" width="30" />
+              </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 90%; font-size: 13px; text-align: center; padding-bottom: 80px; color: #323232">
+          <div style="padding: 16px 0;">Copyright 2021 PayClip, Inc.</div>
+          <div style="padding-top: 16px 0;">
+            <a href="https://clip.mx/privacidad/" style="text-decoration: none; color: #323232">Aviso de Privacidad</a>
+            | <a href="https://clip.mx/terminos/" style="text-decoration: none; color: #323232">Terminos y
+              condiciones</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>

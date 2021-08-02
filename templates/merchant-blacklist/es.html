@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Clip email</title>
+
+      <style>
+            .executionType:last-child {
+               border-right: none !important;
+            }
+      </style>
+   </head>
+   <body style="text-align: center;padding: 2% 0;border: 1px solid rgba(32, 33, 36, .28);width: 40%;margin: 25px auto;min-width: 530px;">
+      <header>
+         <img src="{{ assetsUrl }}/common/logo-clip.png" alt="Clip logo" style="width: 68px;height: 68px;">
+         <div style="width: 242px;font-family: Barlow;font-size: 16px;font-weight: 600;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: 0.4px;text-align: center;color: #b2c0c7;display: block;text-align: center;width: 100%;margin: 2% 0px;">{{ title }}</div>
+      </header>
+      <main>
+         <div style="width: 480px;font-family: Barlow;font-size: 30px;font-weight: bold;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: -0.15px;text-align: center;color: #323232;display: block;width: 100%;text-align: center;">Finalización de ejecución</div>
+         <p style="width: 80%;font-family: Barlow;font-size: 18px;font-weight: normal;font-stretch: normal;font-style: normal;line-height: 1.39;letter-spacing: normal;text-align: center;color: #323232;margin: 5% auto 10% auto;">
+            Hola, eres parte de la lista de distribución de {{ title }}. Se ha finalizado el proceso de ejecución.
+         </p>
+         <div style="background: rgb(50, 50, 50);color: white;padding: 5% 2%;">
+            <div style="box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25); background-color: #ffffff; font-weight: bold; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: 0.23px; text-align: center; color: #323232; width: 190px; border-radius: 45px; margin: 0 auto; padding: 2px;">TIPO DE EJECUCIÓN</div>
+            <div style="font-family: Barlow;font-size: 20px;font-weight: bold;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: 0.17px;text-align: center;color: #ffffff;margin-top: 2%;text-transform: uppercase;">
+               {{#each executionTypes }}
+                  <span class="executionType" style="text-align: center;width: 30%;padding: 5px 0;display: inline-block;vertical-align: middle;">{{ this }}</span>
+               {{/each}}
+            </div>
+         </div>
+         <div style="padding: 10% 0px;">
+            <img src="{{ assetsUrl }}/common/attachment.png" alt="Attachement logo" style="width: 48px;height: 48px;">
+            <div style="width: 480px; font-family: Barlow; font-size: 16px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.94; letter-spacing: normal; text-align: center; margin: 0 auto">
+               <div style="color: #323232;">Haz click en los links para ver los reportes</div>
+               {{#each attachmentsLinks }}
+                     <div><a style="color: #0074B7;" href="{{ url }}">{{ filename }}</a></div>
+               {{/each}}
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div style="background-color: #f5f7fa; padding: 2% 0;">
+            <p style="width: 479px;font-family: Barlow;font-size: 13px;font-weight: normal;font-stretch: normal;font-style: normal;line-height: 1.46;letter-spacing: normal;text-align: center;color: #323232;display: block;width: 80%;margin: 0 auto;">
+               El contenido de este reporte es información restringida, la divulgación de su contenido podría devenir en un riesgo significativo para Clip, ya sea en alguna acción legal, pérdida financiera o daño a su reputación.
+               <br> Por favor cuida el medio de almacenamiento de ésta información y evita compartirla con otras áreas a menos que sea previamente pactado con el responsable de ella.
+            </p>
+         </div>
+         <p style="text-transform: uppercase;width: 293px;font-family: Barlow;font-size: 13px;font-weight: 600;font-stretch: normal;font-style: normal;line-height: 1.15;letter-spacing: normal;text-align: center;color: #323232;margin: 10% auto;">
+            En caso de no deber recibir este mensaje Por favor contacta a tu manager
+         </p>
+         <p style="width: 271px; font-family: Barlow; font-size: 13px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 1.85; letter-spacing: normal; text-align: center; color: #323232; margin: 0 auto;">Copyright 2019 PayClip, Inc
+            <br> Aviso de privacidad | Terminos y condiciones
+         </p>
+      </footer>
+   </body>
+</html>

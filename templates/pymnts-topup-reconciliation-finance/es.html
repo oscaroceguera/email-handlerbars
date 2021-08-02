@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clip: Informe de Reconciliación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="http://clipimg.com.s3.amazonaws.com/logo.png" type="image/x-icon" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!--<![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {width: 600px;margin: 0 auto;}
+        table {border-collapse: collapse;}
+        table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+        img {-ms-interpolation-mode: bicubic;}
+      </style>
+    <![endif]-->
+
+    <style type="text/css">
+        body,
+        p,
+        div {
+            font-family: 'Barlow', 'Roboto', helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        body {
+            color: #000000;
+        }
+
+        body a {
+            color: #1188E6;
+            text-decoration: none;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        img.max-width {
+            max-width: 100% !important;
+        }
+
+        .download-button {
+            border-spacing: 0px;
+        }
+
+        @media screen and (max-width:480px) {
+            img.max-width {
+                height: auto !important;
+                max-width: 480px !important;
+            }
+            a.bulletproof-button {
+                display: block !important;
+                width: 50%;
+                text-align: center;
+                font-size: 80%;
+                padding: 8px 11px !important;
+            }
+        }
+    </style>
+    <!--user entered Head Start-->
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <!-- Barlow Font -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Barlow', 'Roboto', helvetica, sans-serif;
+        }
+    </style>
+    <!--End Head user entered-->
+</head>
+
+<body style="background-color:#e0e0e0;">
+    <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#e0e0e0" style="margin:0 auto; padding-top:20px; background:#e0e0e0;table-layout:fixed;font-family:DINPro,Helvetica,Arial,san-serif;max-width: 500px;">
+        <tr>
+            <td align="center">
+                <table cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background:#ffffff;">
+                    <tr>
+                        <td>
+                            <table style="width:100%; margin:0;background:url(http://clipimg.com.s3.amazonaws.com/clip_logobg.png) repeat-x #ffffff;"
+                                cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding:0 0 0 0; margin:0;">
+                                        <div style="text-align:center;">
+                                            <img class="CToWUd" src="http://clipimg.com.s3.amazonaws.com/logo.png" alt="Clip Logo" width="54" height="54">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <table style="padding:15px 30px 30px 30px;font-size:14px; color:#4a4a4a; line-height:21px; border-spacing: 0px;">
+                            <tr>
+                                <td>Hola,
+                                    <br>Se adjunta el resultado de la conciliación entre las transacciones Top Ups de Clip y
+                                    PROSA. Asimismo, se adjunta la factura interna como base para Factura PROSA.
+                                    <br>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <br>
+                                    <a class="bulletproof-button" href="{{pdfUrl}}" target="_blank" style="background-color:#fc4c02; padding:8px 30px; margin-top:6px; color:#ffffff; text-decoration:none; border-radius:5px;">PDF de la factura</a>
+                                </td>
+                            </tr>
+
+                            {{#if noMatchPdf}}
+                            <tr>
+                                <td>
+                                    <br>
+                                    <a class="bulletproof-button" href="{{noMatchPdf}}" target="_blank" style="background-color:#fc4c02; padding:8px 11px; margin-top:6px; color:#ffffff; text-decoration:none; border-radius:5px;">No Match PDF de la factura</a>
+                                </td>
+                            </tr>
+                            {{/if}}
+
+                            {{#if excelUrl}}
+                            <tr>
+                                <td>
+                                    <br>
+                                    <a class="bulletproof-button" href="{{excelUrl}}" target="_blank" style="background-color:#fc4c02; padding:8px 11px; margin-top:6px; color:#ffffff; text-decoration:none; border-radius:5px;">Excel de Reconciliación</a>
+                                </td>
+                            </tr>
+                            {{/if}}
+                            <tr>
+                                <td>
+                                    <br>
+                                    <br>
+                                    Gracias!
+                                </td>
+                            </tr>
+            </td>
+            </tr>
+
+            </table>
+        </tr>
+        <tr>
+            <td align="center">
+                <!-- footer-->
+                <table width="100%" cellspacing="0" cellpadding="0" bgcolor="#e0e0e0" style="background:#e0e0e0;font-family:DINPro,Helvetica,Arial,san-serif;">
+                    <tr>
+                        <td style="text-align:center; padding:20px 30px 0 30px; ;">
+                            <a href="http://clip.mx" target="_blank">
+                                <img src="http://clipimg.com.s3.amazonaws.com/clip-white.png">
+                            </a>
+                            <p style="font-size: 13px; color:#777777; line-height:21px;">Copyright © 2018 PAYCLIP S. de R.L. de C.V.
+                                <br>Todos los derechos reservados.</p>
+                            <p>
+                                <a style="font-size: 13px; line-height:21px; color: #fc4c02; text-decoration: none;" href="https://clip.mx/privacidad/?utm_source=daily_sales_report_email&amp;utm_medium=email&amp;utm_campaign=click_privacy_link">Aviso de Privacidad</a>
+                                <br>
+                                <a style="font-size: 13px; line-height:21px; color: #fc4c02; text-decoration: none;" href="https://clip.mx/terminos/?utm_source=daily_sales_report_email&amp;utm_medium=email&amp;utm_campaign=click_terms_link">T&eacute;rminos y Condiciones</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+    </table>
+    <style>
+        @media print {
+            #_t {
+                background-image: url('https://e7az1o48.emltrk.com/e7az1o48?p&d=<%= @user.email %>');
+            }
+        }
+
+        div.OutlookMessageHeader {
+            background-image: url('https://e7az1o48.emltrk.com/e7az1o48?f&d=<%= @user.email %>')
+        }
+
+        table.moz-email-headers-table {
+            background-image: url('https://e7az1o48.emltrk.com/e7az1o48?f&d=<%= @user.email %>')
+        }
+
+        blockquote #_t {
+            background-image: url('https://e7az1o48.emltrk.com/e7az1o48?f&d=<%= @user.email %>')
+        }
+
+        #MailContainerBody #_t {
+            background-image: url('https://e7az1o48.emltrk.com/e7az1o48?f&d=<%= @user.email %>')
+        }
+    </style>
+    <div id="_t"></div>
+    <img src="https://e7az1o48.emltrk.com/e7az1o48?d=&lt;%= @user.email %&gt;" width="1" height="1" border="0">
+</body>
+
+</html>

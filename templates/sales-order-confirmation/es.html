@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <style type="text/css">
+      body {
+        background-color: #fff;
+        font-family: 'Barlow', 'Roboto', sans-serif !important;
+        margin: 0 !important;
+        padding: 15px;
+      }
+      .wrapper {
+        table-layout: fixed;
+        width: 100%;
+      }
+      .wrapper-inner {
+        background-color: #fff;
+        border-top: solid 4px #fc4c02;
+        margin: 0 auto;
+        max-width: 670px;
+        width: 100%;
+      }
+      table {
+        border-spacing: 0;
+        color: #001724;
+      }
+      .outer-table {
+        background-color: #fff;
+        margin: 0 auto;
+        max-width: 670px;
+        width: 100%;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        margin: 0;
+      }
+      a {
+        color: #f1f1f1;
+        text-decoration: none;
+      }
+      .main-table-first {
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 25px;
+        margin: 0 auto;
+        max-width: 610px;
+        width: 100%;
+      }
+      .two-column {
+        background-color: #fff6f2;
+        border-radius: 8px;
+        font-size: 0;
+        padding: 12px 0 12px 0;
+        text-align: center;
+      }
+      .two-column .section {
+        display: inline-block;
+        max-width: 300px;
+        vertical-align: top;
+        width: 100%;
+      }
+      .two-column .content {
+        font-size: 18px;
+        text-align: justify;
+      }
+      .border-section-left {
+        border-left: solid 1px #ffddce;
+      }
+      .border-section-right {
+        border-right: solid 1px #ffddce;
+      }
+      .content {
+        padding-top: 20px;
+        width: 100%;
+      }
+      .center {
+        display: table;
+        margin: 0 auto;
+      }
+      .phone-icon {
+        height: 36px;
+        margin-right: 10px;
+        width: 36px;
+      }
+      .clip {
+        height: 64px;
+        width: 64px;
+      }
+      img.logo {
+        margin: 80px auto 45px;
+        max-width: 290px !important;
+      }
+      #callout {
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+      }
+      .social {
+        list-style-type: none;
+        margin-top: 1%;
+        padding: 0;
+      }
+      .social li {
+        display: inline-block;
+      }
+      .social-media {
+        height: 32px;
+        margin-right: 16px;
+        width: 32px;
+      }
+      .main-table {
+        background-color: #fff;
+        border-radius: 6px;
+        margin: 0 auto;
+        max-width: 610px;
+        width: 100%;
+      }
+      .one-column .inner-td {
+        font-size: 16px;
+        text-align: justify;
+      }
+      .inner-td {
+        padding: 10px;
+      }
+      .h2 {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 12px;
+        text-align: center;
+      }
+      p.center {
+        max-width: 580px;
+        line-height: 24px;
+        text-align: center;
+      }
+      .two-column .text {
+        padding: 10px 0;
+      }
+      .outer-table-3 {
+        background-color: #f5f7fa;
+        max-width: 670px;
+        margin: 22px auto 45px 0;
+        padding: 30px 0 25px 0;
+        width: 100%;
+      }
+      .h3 {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+      }
+      .bold-center-text {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+      }
+      .subheader {
+        color: #fc4c02;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .small-text {
+        color: #302525;
+        font-size: 16px;
+      }
+      .bold-text {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .smaller-text {
+        color: #001724;
+        text-align: center;
+        font-size: 14px !important;
+        font-weight: 500;
+      }
+      .tiny-text {
+        color: #4d5d66;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+      }
+      .footer {
+        background-color: #fff;
+        color: #4d5d66;
+        margin: 0 auto;
+        width: 100%;
+      }
+      .footer img {
+        display: block;
+        max-width: 135px;
+        margin: 0 auto;
+        padding: 4% 0 1% 0;
+      }
+      .text-align-left {
+        color: #302525;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+      }
+      @media screen and (max-width: 400px) {
+        .two-column .column {
+          max-width: 100% !important;
+        }
+        .two-column img {
+          width: 100% !important;
+        }
+      }
+      @media screen and (min-width: 401px) and (max-width: 400px) {
+        .two-column .column {
+          max-width: 50% !important;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        img.logo {
+          float: none !important;
+          margin-left: 0% !important;
+          max-width: 290px !important;
+        }
+        #callout {
+          float: none !important;
+          height: auto;
+          margin: 0% 0% 0% 0;
+          overflow: hidden;
+          text-align: center;
+        }
+        #callout img {
+          max-width: 32px !important;
+        }
+        .two-column .section {
+          display: inline-block;
+          max-width: 100% !important;
+          vertical-align: top;
+          width: 100% !important;
+        }
+        .two-column img {
+          height: auto !important;
+          width: 100% !important;
+        }
+        .content {
+          padding-top: 0px !important;
+          width: 100%;
+        }
+        .border-section-left {
+          border-left: none;
+          border-top: solid 1px #ffddce;
+          padding-top: 20px !important;
+        }
+        .section-left {
+          padding: 2px;
+        }
+        .border-section-right {
+          border-bottom: solid 1px #ffddce;
+          border-right: none;
+          margin-bottom: 15px !important;
+        }
+        .h2 {
+          font-size: 25px;
+        }
+        .two-column .content {
+          font-size: 16px;
+        }
+        .tiny-text {
+          font-size: 11px;
+        }
+        .social-media {
+          margin-right: 10px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <table class="main-table-first">
+          <tr>
+            <td align="center">
+              <img src="{{ assetsUrl }}/common/clip-agente.png" class="logo" />
+            </td>
+          </tr>
+        </table>
+        <table class="main-table">
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="inner-td">
+                    <p class="h2">Hola, {{ commiFirstName }}</p>
+                    <p class="center" style="margin-bottom: 40px;">
+                      Estás a un paso de recibir tu pedido y empezar a ganar
+                      dinero. En cuanto realices tu depósito enviaremos los
+                      lectores.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="two-column">
+              <div class="section border-section-right">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td">
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <p class="center">Total</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p class="h3">${{ amount }}</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="section">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td">
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <p class="center">Pagar antes del:</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p class="bold-center-text">{{ deadline }}</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <table class="main-table">
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="inner-td">
+                    <p class="smaller-text">Método de pago: Depósito bancario</p>
+                    <p class="center" style="margin-bottom: 15px; margin-top: 40px;">
+                      Acude a cualquier sucursal bancaria con este recibo y
+                      entrega los datos correspondientes:
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="two-column">
+              <div class="section section-left">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td" style="padding: 0 23px;">
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <p class="subheader">BBVA</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Nº de convenio CIE</p>
+                            <p class="bold-text">{{ CIE }}</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Referencia</p>
+                            <p class="bold-text">{{ reference }}</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Monto a pagar</p>
+                            <p class="bold-text">${{ amount }}</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Concepto</p>
+                            <p class="text-align-left">{{ description }}</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="section border-section-left">
+                <table width="100%">
+                  <tr>
+                    <td class="inner-td" style="padding: 0 23px;">
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <p class="subheader">OTROS BANCOS</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Beneficiario</p>
+                            <p class="bold-text">{{ beneficiary }}</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Banco destino</p>
+                            <p class="bold-text">{{ bank }}</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Cuenta CLABE</p>
+                            <p class="bold-text">{{ CLABE }}</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Concepto de pago</p>
+                            <p class="bold-text">{{ concept }}</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Referencia</p>
+                            <p class="bold-text">{{ CIE }}</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p>Monto a pagar</p>
+                            <p class="bold-text">${{ amount }}</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <table class="main-table">
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="inner-td">
+                    <p class="bold-center-text" style="margin-top: 40px;">
+                      ¿Necesitas ayuda?
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="inner-td">
+                    <p class="small-text" style="text-align: center; margin-bottom: 40px">
+                      <img
+                        src="{{ assetsUrl }}/common/contact.png"
+                        class="phone-icon"
+                        style="vertical-align: middle;"
+                      />
+                      <span style="vertical-align: middle;">
+                        Contacta a tu Asesor Clip.
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table class="outer-table-3">
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="inner-td">
+                    <p class="smaller-text">
+                      Clip Agente es una app de
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="inner-td">
+                    <div align="center">
+                      <a href="https://clip.mx">
+                        <img class="clip" src="{{ assetsUrl }}/common/logo-clip.png"/>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table class="main-table">
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="footer">
+                    <table class="content">
+                      <tr>
+                        <td>
+                          <div id="callout">
+                            <ul class="social">
+                              <li>
+                                <a href="https://www.facebook.com/clipmx">
+                                  <img src="{{ assetsUrl }}/common/facebook.png" class="social-media"/>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="https://twitter.com/clip_mx">
+                                  <img src="{{ assetsUrl }}/common/twitter.png" class="social-media"/>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="https://www.youtube.com/user/clipmx">
+                                  <img src="{{ assetsUrl }}/common/youtube.png" class="social-media"/>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="https://www.instagram.com/clip.mx">
+                                  <img src="{{ assetsUrl }}/common/instagram.png" style="width: 32px; height: 32px;"/>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    <p class="tiny-text" style="margin-top: 22px; margin-bottom: 9px;">
+                      Copyright 2020 PayClip, Inc.
+                    </p>
+                    <div style="display: flex;">
+                      <div style="width: 50%;">
+                        <a href="https://clip.mx/privacidad/?utm_source=daily_sales_report_email&utm_medium=email&utm_campaign=click_privacy_link">
+                          <p class="tiny-text" style="text-align: right; padding-right: 15px; color: #0074b7;">
+                            Aviso de Privacidad
+                          </p>
+                        </a>
+                      </div>
+                      <div style="width: 50%;">
+                        <a href="https://clip.mx/terminos/?utm_source=daily_sales_report_email&utm_medium=email&utm_campaign=click_terms_link">
+                          <p class="tiny-text" style="text-align: left; padding-left: 15px; color: #0074b7; border-left: solid 1px #4d5d66;">
+                            Términos y Condiciones
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

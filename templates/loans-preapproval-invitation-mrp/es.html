@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /* box general */
+    .shadow {
+      width: 603px;
+      border-top: 2px solid #f9f9f9;
+      border-left: 2px solid #f9f9f9;
+      border-right: 2px solid #ececec;
+      border-bottom: 2px solid #ececec;
+      background-color: #ffffff;
+    }
+
+    .box-general {
+      text-align: left;
+      width: 600px;
+    }
+
+    .box-icon {
+      text-align: center;
+      display: block;
+      margin: 22px auto 0;
+    }
+
+    .box-footer {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      margin-top: 10px;
+      color: #455a64;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 18px;
+      text-decoration: none;
+      border-top: 1px solid #cccccc;
+      height: 40px;
+    }
+
+    .box-footer a {
+      text-decoration: none;
+      color: #455a64;
+    }
+
+    .box-footer .copyright {
+      float: left;
+    }
+
+    .box-footer .privacity,
+    .box-footer .separator,
+    .box-footer .terms {
+      float: right;
+    }
+
+    /* contents */
+    body {
+      background: #F8FBFE;
+    }
+
+    .logo-clip {
+      margin: 30px 0 30px 0;
+      width: 56px;
+    }
+
+    /* parent */
+    .header-email {
+      height: 219px;
+      background-image: url('https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/hands.png');
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+      background-position: right 0;
+      display: grid;
+    }
+
+    /* left child */
+    .title-text {
+      width: 40%;
+      display: block;
+      font-size: 26px;
+      color: #455A64;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: 0.55px;
+      line-height: 38px;
+      margin-top: 40px;
+      margin-left: 32px;
+      float: left;
+    }
+
+    .title-date {
+      width: 95%;
+      color: #455A64;
+      font-size: 14px;
+      line-height: 30px;
+      padding-left: 30px;
+      float: left;
+      align-items: flex-end;
+    }
+
+    .title-date>b {
+      font-weight: 600;
+    }
+
+    .title-text span {
+      font-style: normal;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* right child */
+    .logo-email {
+      display: block;
+      width: 300px;
+      float: right;
+    }
+
+    .logo-email img {
+      width: 300px;
+      height: 219px;
+    }
+
+    .second-box {
+      display: block;
+      border-top: #0288D1 solid 4px;
+      background-color: #ffffff;
+    }
+
+    .text-high,
+    .text-medium {
+      margin: 30px 30px 30px 30px;
+    }
+
+    .text-high {
+      font-weight: 500;
+      font-size: 16px;
+      color: #455A64;
+      letter-spacing: 0.27px;
+      line-height: 28px;
+      display: block;
+    }
+
+    .text-medium {
+      text-align: justify;
+      font-weight: 300;
+      font-size: 16px;
+      color: #455A64;
+      letter-spacing: 0;
+      line-height: 28px;
+      display: block;
+    }
+
+    .text-medium a {
+      font-weight: 300;
+      font-size: 16px;
+      color: #0288D1;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 28px;
+    }
+
+    .text-medium b {
+      font-size: 18px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .find-button {
+      text-align: center;
+      margin: 30px 0 30px 0;
+    }
+
+    .find-button a {
+      display: block;
+      text-decoration: none;
+      background-color: #0288D1;
+      border-radius: 4px;
+      border-radius: 4px;
+      border: 0px;
+      width: 340px;
+      height: 48px;
+      line-height: 46px;
+      opacity: 100%;
+      font-size: 18px;
+      color: #FFFFFF;
+      letter-spacing: 1.27px;
+      margin: 0 auto;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    .divisor-clip {
+      text-align: center;
+    }
+
+    .divisor-clip img {
+      width: 100%;
+      height: auto;
+      max-width: 530px;
+    }
+
+    .third-box {
+      background: #ECEFF1;
+      padding: 1px;
+    }
+
+    .third-box .text-medium {
+      margin: 16px 30px 16px 30px;
+    }
+
+    .text-decoration {
+      color: #0288d1 !important;
+      text-decoration: none;
+    }
+
+    .text-underline {
+      text-decoration: underline;
+    }
+
+    .network-icons {
+      margin: 0 5px 0 5px;
+    }
+
+    .store-icons {
+      margin: 0 10px 0 0px;
+    }
+
+    .trick {
+      display: block;
+    }
+
+    /* header */
+    @media only screen and (max-width: 480px) {
+
+      /* reduce box */
+      .shadow {
+        width: 347px;
+      }
+
+      .box-general {
+        text-align: justify;
+        width: 343px;
+      }
+
+      /* parent */
+      .header-email {
+        height: 140px;
+        background-size: 60% 100%;
+        background-position: 120% 0;
+      }
+
+      /* children */
+      .title-text {
+        width: 55%;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        line-height: 21.2px;
+        font-weight: 600;
+        margin-top: 0px;
+        padding-top: 30px;
+        margin-left: 16px;
+        text-align: left;
+      }
+
+      .title-date {
+        top: 8%;
+        padding-left: 16px;
+        padding-top: 10px;
+        line-height: 15px;
+        word-break: break-word;
+      }
+
+      .title-text span {
+        font-size: 22px;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      /* right child */
+      .logo-email {
+        float: right;
+        width: 143px;
+        height: 123px;
+        min-height: 123px;
+        max-height: 123px;
+      }
+
+      .logo-email img {
+        width: 143px;
+        height: 123px;
+        min-height: 123px;
+        max-height: 123px;
+      }
+
+      /* texts */
+      .text-high,
+      .text-medium {
+        margin: 30px 16px 30px 16px;
+      }
+
+      .third-box .text-medium {
+        margin: 16px 16px 16px 16px;
+      }
+
+      /* button */
+      .find-button a {
+        width: 286px;
+      }
+
+      .trick {
+        display: inline;
+      }
+
+      .box-footer .copyright,
+      .box-footer .privacity,
+      .box-footer .separator,
+      .box-footer .terms {
+        float: none;
+        display: block;
+        margin-top: 15px;
+      }
+
+      .box-footer .separator {
+        display: none;
+      }
+    }
+
+    .text-inside {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body style="background:#F8FBFE;">
+  <center>
+    <img src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/clip-logo.png" alt="logo-clip"
+      class="logo-clip">
+    <div class="shadow">
+      <div class="box-general">
+        <div class="header-email">
+          <span class="title-text">
+            Disfruta Credi Clip por hasta ${{pre_approval_value}} pesos
+          </span>
+          <span class="title-date">Tienes <b>hasta el {{expiration_date_local}}</b> para solicitarlo</span>
+        </div>
+        <div></div>
+        <div class="second-box">
+          <span class="text-high">¡Felicidades, {{merchant_name}}!</span>
+          <p class="text-medium">
+            <span class="text-inside">
+              <span class="trick">Por tu buen historial de ventas fuiste elegido para disfrutar Credi Clip,</span>
+              <a style="text-decoration: none;" href="{{merchant_dashboard_url}}" target="_blank">un adelanto de ventas
+                por hasta <b>$ {{pre_approval_value}}</b> pesos</a> para invertir en tu negocio como lo desees.
+              Puedes comprar nuevos muebles o algo extra que te ayude a crecer tu negocio.<br>
+            </span>
+            <span class="text-inside">
+              Si tu solicitud es aprobada y completas el proceso, te depositaremos
+              tu Credi Clip en 24 horas hábiles a tu cuenta CLABE registrada con Clip.<br>
+            </span>
+            <span class="text-inside">
+              Pagarás tu Credi Clip sin preocupaciones, con un porcentaje de tus ventas diarias. Sin enganche ni
+              aval.<br>
+            </span>
+          </p>
+          <div class="find-button">
+            <a href="{{merchant_dashboard_url}}" target="_blank">DESCUBRIR CREDI CLIP</a>
+          </div>
+          <span class="text-medium">Clip te brinda todas la herramientas necesarias para crecer tu negocio.</span>
+          <div class="divisor-clip">
+            <img src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/divisor.png" alt="divisor" />
+          </div>
+          <span class="text-medium">
+            Si tienes alguna pregunta, nuestro equipo de Customer
+            Happiness está listo para ayudarte.
+            Llámanos de lunes a viernes de 8:30 a.m. a 8:30 p.m.
+            sábados y domingos de 10 a.m a 5 p.m o escríbenos por
+            Whatsapp al
+            <a href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data="
+              style="color: #0288d1; text-decoration: none; cursor: pointer;">
+              55 6393 2323</a>. También nos puedes mandar un email a
+            <a href="mailto:help@clip.mx"
+              style="color: #0288d1; text-decoration: none; cursor: pointer;">help@clip.mx</a>
+            y escribirnos por webchat en
+            <a href="https://clip.mx/" target="_blank"
+              style="color: #0288d1; text-decoration: none; cursor: pointer;">www.clip.mx</a>.
+          </span>
+        </div>
+        <div class="third-box">
+          <p class="text-medium">
+            <span class="text-underline">Importante</span>: Esta invitación es única e intransferible, personas o
+            comercios ajenos a esta invitación no podrán ser parte del programa de Credi Clip. <br />
+            La cantidad a la que puedes aplicar puede variar según tus ventas.<br />
+            <a class="text-decoration" target="_blank" href="https://dashboard.clip.mx/loans/terms">Revisa los términos
+              y condiciones del programa de Credi Clip aquí</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box-general">
+      <div class="box-icon">
+        <div>
+          <a class="network-icons" href="https://www.facebook.com/clipmx/" target="_blank"><img width="32" height="32"
+              alt="facebook"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/facebook-icon.png" /></a>
+          <a class="network-icons" href="https://twitter.com/clip_mx/" target="_blank"><img width="32" height="32"
+              alt="twitter" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/twitter-icon.png" /></a>
+          <a class="network-icons" href="https://www.youtube.com/user/clipmx/" target="_blank"><img width="32"
+              height="32" alt="youTube"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/youtube-icon.png" /></a>
+          <a class="network-icons" href="https://www.instagram.com/clip.mx/" target="_blank"><img width="32" height="32"
+              alt="instagram"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/instagram-icon.png" /></a>
+        </div>
+      </div>
+      <div class="box-footer">
+        <span class="copyright">
+          Copyright 2019 PayClip, Inc.
+        </span>
+        <span class="privacity">
+          <a href="https://clip.mx/privacidad/" target="_blank">
+            Aviso de Privacidad
+          </a>
+        </span>
+        <span class="separator">
+          &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        </span>
+        <span class="terms">
+          <a href="https://clip.mx/terminos/" target="_blank">
+            Términos y Condiciones
+          </a>
+        </span>
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!--<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+      body {width: 600px;margin: 0 auto;}
+      table {border-collapse: collapse;}
+      table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+      img {-ms-interpolation-mode: bicubic;}
+    </style>
+    <![endif]-->
+
+  <!-- Reset CSS -->
+  <style type="text/css">
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+      v2.0 | 20110126
+      License: none (public domain)
+    */
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+  </style>
+  <!-- Barlow Font -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <!--user entered Head Start-->
+  <style>
+    * {
+      font-family: Barlow, sans-serif !important;
+    }
+
+    a:visited {
+      color: #0288D1;
+      text-decoration: none;
+    }
+  </style>
+  <!--End Head user entered-->
+</head>
+
+<body style="background:#F8FBFE;">
+  <center>
+    <table cellpadding="0" cellspacing="0" border="0"
+      style="width: 100%; max-width:600px; background-color: #ffffff; margin-top: 8px; -webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,.16); -moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,.16); box-shadow: 0 2px 8px 0 rgba(0,0,0,.16);"
+      align="center">
+      <tr>
+        <td style="text-align: center; padding: 15px 0; border-bottom: 5px #0288d1 solid;"><img
+            src="{{assetsUrl}}/merchant-referral-qualification/clip-logo.png" alt="logo-clip" class="logo" width="60">
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 32px 32px 0;">
+          <img src="{{assetsUrl}}/merchant-referral-qualification/icon-congrats.png" alt="icon-success" width="40"
+            height="40" />
+          <h1 style="color: #C6D1D7; margin: 16px 0; display: block; font-size: 16px;">PROMOCIONES</h1>
+          <h2 style="color: #455a64; font-size: 24px; margin: 16px 16px 32px 16px; display: block;">
+            {{#if isFeeRefund}}
+            Tienes un descuento por haber<br /> sido invitado a usar Clip
+            {{else}}
+            Usa tu Clip y empieza a ganar
+            {{/if}}
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table cellpadding="0" cellspacing="0" border="0" width="331" height="130"
+            style="width: 331px; height: 130px; background-size: 331px 130px; background-color: #ffffff; margin-top: 8px; background-image: url('{{assetsUrl}}/merchant-referral-qualification/ticket.png'); background-repeat: no-repeat;"
+            align="center">
+            <tr>
+              <td style="width: 40%; padding: 10px 15px">
+                <img src="{{assetsUrl}}/merchant-referral-qualification/success.png" alt="icon-success" width="117" />
+              </td>
+              <td style="width: 60%; text-align: center; padding: 16px; color: #455A64">
+                <div style="font-size: 39px; font-weight: 600">${{benefitAmount}}</div>
+                <div style="font-size: 13px; font-weight: 600">
+                  {{#if isFeeRefund}}
+                  EN COMISIONES
+                  {{else}}
+                  DE DEPÓSITO A TU CUENTA
+                  {{/if}}
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 32px 32px 0; color: #78909c; font-size: 18px; line-height: 29px;">
+          {{#if isFeeRefund}}
+          Ya creaste tu cuenta, ahora puedes empezar a aceptar pagos con Clip, además, no pagarás la comisión para los
+          primeros ${{referredFreeCommission}} en ventas.
+          {{else if isCashAfterTpvExceeded}}
+          !Felicidades! Acabas de crear tu cuenta con un código de referido. En cuanto alcances la meta de $1,000 en
+          ventas, te depositaremos una recompensa de ${{benefitAmount}} pesos a la cuenta bancaria registrada en tu
+          cuenta Clip.
+          {{else}}
+          Acabas de crear tu cuenta con un código de invitación, ahora solo te falta hacer tu primera venta con tu nuevo
+          Clip y ganarás ${{benefitAmount}} MXN de recompensa.
+          {{/if}}
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 32px 32px 0;">
+          <span style="color: #b1b1b1; font-size: 24px; font-style: italic; line-height: 32px;">
+            {{#if isCashAfter1stTransaction}}
+            ¿Todavía no tienes tu Clip? ¡Cómpralo ahora!
+            {{else}}
+            Empieza a aceptar pagos con <br />Clip y crece tu negocio
+            {{/if}}
+          </span>
+          {{#if isCashAfter1stTransaction}}
+          <a ses:no-track href="https://compra-tu-clip.clip.mx/"
+            style="color: #FFF; background: #0288D1; font-weight: 600; text-decoration: none; width: 196px; height: 47px; display: block; border-radius: 4px; line-height: 47px; margin: 32px 0 16px 0; font-size: 16px; padding: 0 16px">Comprar
+            mi Clip</a>
+          {{else}}
+          <a ses:no-track href="{{deepLink}}"
+            style="color: #FFF; background: #0288D1; font-weight: 600; text-decoration: none; width: 196px; height: 47px; display: block; border-radius: 4px; line-height: 47px; margin: 32px 0 16px 0; font-size: 16px; padding: 0 16px">ABRIR
+            APP CLIP</a>
+          {{/if}}
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 32px">
+          <img src="{{assetsUrl}}/merchant-referral-qualification/separador.png" alt="separador" width="100%" />
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0 32px 32px; color: #455A64; font-size: 16px; line-height: 28px;">
+          <span style="margin-bottom: 32px; display: block;">
+            {{#if isCashAfter1stTransaction}}
+            Para recibir esta recompensa, tu transacción se tiene que realizar con un Clip nuevo y dentro de los
+            próximos 60 días. Te depositaremos tu recompensa directamente a la cuenta bancaria con la que registraste tu
+            Clip.
+            <br />
+            {{/if}}
+            Si tienes alguna pregunta, nuestro equipo de Customer Happiness está listo para ayudarte.
+            Llámanos de lunes a viernes 8:30 a.m. a 8:30 p.m. sábados y domingos: 10 a.m. a 5 p.m. o
+            escríbenos por Whatsapp al <a class="text-link" target="_blank"
+              href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data="> (55) 6393-2323</a>.
+            También nos puedes mandar un email a <a class="text-link" target="_blank"
+              href="mailto:help@clip.mx">help@clip.mx</a>
+            y escríbenos por webchat en <a class="text-decoration" target="_blank"
+              href="https://www.clip.mx">www.clip.mx</a>
+            <br /><br />
+            Consulta <a class="text-decoration" target="_blank" href="https://ayuda.clip.mx">ayuda.clip.mx</a> para más
+            información.
+          </span>
+          <span>
+            Consulta <a href="https://www.clip.mx/ayuda"
+              style="color: #0288d1; text-decoration: none;">www.clip.mx/ayuda</a> para más información
+          </span>
+        </td>
+      </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="0"
+      style="width: 100%; max-width:600px; margin-top: 32px; color: #78909c;">
+      <tr style="border-bottom: 1px solid #b1b1b1">
+        <td colspan="2" style="text-align: center;">
+          <div style="display: block;margin:22px auto 0">
+            <div style="display: inline-block;padding: 0 25px 8px;">
+              <a href="https://www.facebook.com/clipmx/" target="_blank" style="text-decoration: none;">
+                <img alt="facebook" src="{{assetsUrl}}/merchant-referral-qualification/facebook.png" width="30" />
+              </a>
+              <a href="https://twitter.com/clip_mx/" target="_blank" style="text-decoration: none;">
+                <img alt="twitter" src="{{assetsUrl}}/merchant-referral-qualification/twitter.png" width="30" />
+              </a>
+              <a href="https://www.youtube.com/user/clipmx/" target="_blank" style="text-decoration: none;">
+                <img alt="youTube" src="{{assetsUrl}}/merchant-referral-qualification/youtube.png" width="30" />
+              </a>
+              <a href="https://www.instagram.com/clip.mx/" target="_blank" style="text-decoration: none;">
+                <img alt="instagram" src="{{assetsUrl}}/merchant-referral-qualification/instagram.png" width="30" />
+              </a>
+            </div>
+            <div style="display: inline-block;padding: 0 25px 8px;">
+              <a href="https://play.google.com/store/apps/details?id=com.payclip.clip" target="_blank"
+                style="text-decoration: none;">
+                <img alt="play store" src="{{assetsUrl}}/merchant-referral-qualification/play-store.png" width="100" />
+              </a>
+              <a href="https://itunes.apple.com/app/id771245360" target="_blank" style="text-decoration: none;">
+                <img alt="app store" src="{{assetsUrl}}/merchant-referral-qualification/app-store.png" width="104" />
+              </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 16px 0;">Copyright 2021 PayClip, Inc.</td>
+        <td style="text-align:right; padding-top: 16px 0;">
+          <a href="https://clip.mx/privacidad/" style="color: #78909c; text-decoration: none;">Aviso de Privacidad</a> |
+          <a href="https://clip.mx/terminos/" style="color: #78909c; text-decoration: none;">Terminos y condiciones</a>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>

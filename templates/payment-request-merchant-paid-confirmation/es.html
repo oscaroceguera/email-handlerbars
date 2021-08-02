@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--[if gte mso 15]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG />
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+  <title>ClipMx - Payment Request</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,700  " rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #F8FBFE;
+    }
+    .image {
+      margin: 0 auto;
+      margin-bottom: 40px; 
+      height: 51px;
+    }
+    @media screen and (max-width:480px) {
+      .responsive-info {
+          padding: 0 !important;
+      }
+      .image {
+        width: 300px;
+        height: 45px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="margin: 0 auto;text-align: center;">
+    <div style="max-width: 500px;border-right: 2px solid #ececec;border-bottom: 2px solid #ececec;margin: 0 auto;">
+
+      <hr style="margin: 0; border-top: 4px solid #fc4c02">
+      <div style="width: 100%;background-color: #FFF;border: 1px solid #f9f9f9;">
+        <div style="display: flex;padding: 28px 0 0px 0;width: 100%;height: 100px;background-repeat: no-repeat;background-size: 100% 100%;color: #455A64;">
+          <img class="image" src="{{assetsUrl}}/payment/enlace-clip.png" alt="clip-pagos" />
+      </div>
+        <span
+        style="display: block; color:#001724;font-size:22px;font-weight: 700;font-stretch: normal;line-height: normal;letter-spacing: 0.45px;text-align: center;">
+          Recibiste un pago
+        </span>
+        <div style="width: 100%;">
+          <img src="{{assetsUrl}}/payment/confettiBanner.png" alt="send success" style="margin-bottom: 40px;margin-top: 40px;width: 85%;max-height: 160px;">
+        </div>
+        <div>
+          <span style="color: #001724!important;">Hola, <span style="font-weight: 700">{{merchant_name}} </span>, 
+          recibiste un pago por <br> medio de enlace de <span style="font-weight: 700">{{consumer_email}}.</span> <br>
+          El pago será depositado en tu cuenta en <span style="font-weight: 700">48 horas hábiles.</span>
+        </span>
+        </div>
+        <div style="margin: 0 auto; width: 75%;margin-top: 32px;padding: 10px;text-align: justify;background: #f5fef4;">
+          <span
+          style="color: #398416;font-size: 15px;font-weight: 400;line-height: 30px;display: flex;flex-direction: row;
+          justify-content: space-between; border-bottom: 1px solid #398416;padding: 10px;" class="responsive-info">
+            Fecha de pago:
+            <span style="color: #282321;margin-left: auto;">{{paid_at}}</span>
+          </span>
+          <span
+          style="color: #398416;font-size: 15px;font-weight: 400;line-height: 30px;display: flex;flex-direction: row;
+          justify-content: space-between; border-bottom: 1px solid #398416;padding: 10px;" class="responsive-info">
+            Valor:
+            <span style="color: #282321;margin-left: auto;">{{amount}}</span>
+          </span>
+          <span
+          style="color: #398416;font-size: 15px;font-weight: 400;line-height: 30px;display: flex;flex-direction: row;
+          justify-content: space-between; border-bottom: 1px solid #398416;padding: 10px;" class="responsive-info">
+            Concepto:
+            <span style="color: #282321;margin-left: auto;">{{message}}</span>
+          </span>
+          <span
+            style="color: #398416;font-size: 15px;font-weight: 400;line-height: 30px;display: flex;flex-direction: row;
+            justify-content: space-between;padding: auto;" class="responsive-info">
+            Código de autorización:
+            <span style="color: #282321;margin-left: auto;">{{payment_request_code}}</span>
+          </span>
+        </div>
+
+        <div style="display: block;padding: 30px 35px 30px 35px;" >
+          <h3 style="font-size: 15px;color: #001724;font-weight: 600;">
+              Más información
+          </h3>
+          <span style="display: block;text-align: left;">
+              <img style="margin: 5px;vertical-align: middle;width: 30px;height: 30px;" src="{{assetsUrl}}/payment/whatsappIcon.png" alt="" />
+              <span style="color:  #001724;">WhatsApp: <a style="color: #0074b7;" href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data=">55 6393 2323</a> </span>
+          </span>
+          <span style="display: block;text-align: left;">
+              <img style="margin: 5px;vertical-align: middle;width: 30px;height: 30px;" src="{{assetsUrl}}/payment/mailIcon.png" alt="" />
+              <span style="color:  #001724;">Escríbenos: <a style="color: #0074b7;" href="mailto:help@clip.mx">help@clip.mx</a> </span>
+          </span>
+          <span style="display: block;text-align: left;">
+            <img style="margin: 5px;vertical-align: middle;width: 30px;height: 30px;" src="{{assetsUrl}}/payment/phoneIcon.png" alt="" />
+            <span style="color:  #001724;">Llamanos: <a style="color: #0074b7;" href="tel:5563932323">55 6393 2323</a> </span>
+          </span>
+        </div>
+
+        <div style="margin-top: 45px;background-color: #f5f7fa;text-align: center;padding: 30px 35px 30px 35px;">
+          <span
+              style="color: #78909C;font-size: 13px;font-weight: 400;line-height: 28px;text-align: justify;">
+              Si tienes alguna pregunta, nuestro equipo de Customer <br> Happiness está listo para ayudarte. <br>
+              Contactanos por Whatsapp al
+              <a style="color: #0074b7;text-decoration: none;" target="_blank" href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data=">
+                  55 6393 2323.</a>
+                  También nos puedes mandar un email a
+              <a style="color: #0074b7;text-decoration: none;" target="_blank"
+                  href="mailto:help@clip.mx">help@clip.mx</a>
+              y escribirnos por webchat en
+              <a style="color: #0074b7;text-decoration: none;" target="_blank" href="https://www.clip.mx">
+                  www.clip.mx
+              </a>.
+              De lunes a viernes 8:30a.m. a 8:30p.m., sábados y domingos: 10a.m. a 5:00p.m.
+              Consulta
+              <a style="color: #0074b7;text-decoration: none;" target="_blank" href="https://ayuda.clip.mx">
+                ayuda.clip.mx
+              </a>
+              para más información.
+          </span>
+        </div>
+
+        <div style="width: 100vw;margin: 70px 0 200px 0;display: table-cell;">
+
+          <div style="margin: 0 auto; margin-top: 71px;">
+            <a style="margin-right: 16px;text-decoration: none;" href="https://www.facebook.com/clipmx/"
+              target="_blank">
+              <img width="32" height="32" alt="facebook" src="{{assetsUrl}}/common/facebook.png" />
+            </a>
+            <a style="margin-right: 16px;text-decoration: none;" href="https://twitter.com/clip_mx/" target="_blank">
+              <img width="32" height="32" alt="twitter" src="{{assetsUrl}}/common/twitter.png" />
+            </a>
+            <a style="margin-right: 16px;text-decoration: none;" href="https://www.youtube.com/user/clipmx/"
+              target="_blank">
+              <img width="32" height="32" alt="youTube" src="{{assetsUrl}}/common/youtube.png" />
+            </a>
+            <a style="margin-right: 16px;" href="https://www.instagram.com/clip.mx/" target="_blank">
+              <img width="32" height="32" alt="instagram" src="{{assetsUrl}}/common/instagram.png" />
+            </a>
+          </div>
+
+          <div style="padding-top: 13px;margin-top: 16px;font-size: 14px;line-height: 18px;color: #455A64;margin-bottom: 200px;">
+            <span style="font-size: 13px;">Copyright 2020 PayClip, Inc.</span>
+            <span style="display: block;width: 100%;margin-top: 20px;">
+              <a style="font-size: 13px;color: #455A64;text-decoration: none;" href="https://clip.mx/privacidad/"
+                target="_blank">
+                Aviso de Privacidad
+              </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a style="font-size: 13px;color: #455A64;text-decoration: none;" href="https://mkt.clip.mx/es-mx/consulta-los-terminos-y-condiciones-pagos-a-distancia-clip" target="_blank">
+                Términos y Condiciones
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx - Confirmaci&oacute;n</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+      background: #F8FBFE;
+    }
+
+    .box-icon-left {
+      float: left;
+      display: block;
+      width: 50%;
+      text-align: left;
+    }
+
+    .box-icon-left a {
+      float: left;
+      margin-right: 16px;
+    }
+
+    .box-icon-right {
+      float: right;
+      display: block;
+      width: 50%;
+      text-align: right;
+    }
+
+    .box-icon-right a {
+      color: #455A64;
+      text-decoration: none;
+
+    }
+
+    .box-icon-right a img {
+      width: 103px;
+      margin-left: 8px;
+    }
+
+    .box-icon-bottom {
+      float: left;
+      width: 100%;
+      display: flex;
+      border-top: 1px solid #cccccc;
+      padding-top: 13px;
+      margin-top: 16px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #455A64;
+    }
+
+    /* content */
+    .shadow {
+      width: 608px;
+      border-right: 2px solid #ececec;
+      border-bottom: 2px solid #ececec;
+      margin-bottom: 32px;
+    }
+
+    .content {
+      width: 605px;
+      background-color: #FFF;
+      border: 1px solid #f9f9f9;
+    }
+
+    .logo-clip {
+      margin: 24px 0 24px 0;
+      width: 56px;
+    }
+
+    .container-header {
+      padding-top: 20px;
+      background-image: url("https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/header-clip-as-lender.png");
+      width: 100%;
+      height: 180px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: #FFFFFF;
+    }
+
+    .container-header span {
+      height: 62px;
+      float: left;
+      font-size: 32px;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: 0.51px;
+      line-height: 32px;
+      padding-top: 18px;
+      padding-left: 17px;
+    }
+
+    .container-header img {
+      float: left;
+      padding-left: 20px;
+    }
+
+    .container-content {
+      margin-top: 24px;
+      padding-left: 32px;
+      padding-right: 42px;
+      text-align: justify;
+    }
+
+    .container-content h3 {
+      margin-bottom: 16px;
+      color: #455A64;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      line-height: 22px;
+    }
+
+    .container-content h3 b {
+      font-weight: 600;
+    }
+
+    .container-content span {
+      color: #455A64;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+
+    .container-footer {
+      padding-left: 32px;
+      padding-right: 42px;
+      padding-top: 24px;
+      padding-bottom: 22px;
+      text-align: justify;
+    }
+
+    .container-footer img {
+      width: 100%;
+      padding-bottom: 17px;
+    }
+
+    .container-footer h3 {
+      color: #455A64;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.38px;
+      line-height: 18px;
+      margin-bottom: 22px;
+    }
+
+    .container-footer span {
+      color: #78909C;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: justify;
+      word-break: break-word;
+    }
+
+    .container-footer span a {
+      color: #0288d1;
+      text-decoration: none;
+    }
+
+    .footer {
+      width: 605px;
+      display: inline-block;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .logo-clip {
+        margin: 4px 0 12px 0;
+      }
+
+      .shadow {
+        width: 100%;
+      }
+
+      .content {
+        width: 99%;
+      }
+
+      .container-header {
+        height: 150px;
+        padding-top: 16px;
+      }
+
+      .container-header span {
+        float: none;
+        font-size: 30px;
+        letter-spacing: 0px;
+        padding-left: 8px;
+        position: relative;
+        top: 10px;
+      }
+
+      .container-header img {
+        padding-left: 8px;
+      }
+
+      .container-content {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .container-footer {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .footer {
+        width: 100%;
+      }
+
+      .box-icon-left {
+        width: 60%;
+        margin-left: 16px;
+        text-align: left;
+      }
+
+      .box-icon-right {
+        width: 30%;
+        padding-right: 16px;
+        text-align: right;
+      }
+
+      .box-icon-right a img {
+        width: 100px;
+        margin-left: 0;
+      }
+
+      .box-icon-bottom {
+        display: grid;
+        text-align: center;
+      }
+
+      .copyright {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 4px;
+        float: left;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <img class="logo-clip" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/clip-logo.png"
+      alt="logo-clip">
+    <div class="shadow">
+      <div class="content">
+        <div class="container-header">
+          <img src="https://dev-ses-email-templates-assets.s3.amazonaws.com/loans/search_icon.png" width="62px"
+            height="62px" />
+          <span>Tu solicitud está en revisión</span>
+        </div>
+        <div class="container-content">
+          <h3>
+            <b>Hola {{merchant_name}}</b>,
+          </h3>
+          <span>
+            Estamos revisando tus documentos. Te estaremos informando por correo del estatus de tu solicitud en un
+            máximo de 24 horas hábiles.
+            <br /><br />
+            Gracias por tu confianza, Clip.
+          </span>
+        </div>
+        <div class="container-footer">
+          <img class="divisor-clip" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/divisor.png"
+            alt="divisor" />
+          <h3>¿TIENES DUDAS?</h3>
+          <span>
+            Si tienes alguna pregunta, nuestro equipo de Customer
+            Happiness está listo para ayudarte.
+            Llámanos de lunes a viernes de 8:30 a.m. a 8:30 p.m.
+            sábados y domingos de 10 a.m a 5 p.m o escríbenos por
+            Whatsapp al
+            <a href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data="
+              style="color: #0288d1; text-decoration: none; cursor: pointer;">
+              55 6393 2323</a>. También nos puedes mandar un email a
+            <a href="mailto:help@clip.mx"
+              style="color: #0288d1; text-decoration: none; cursor: pointer;">help@clip.mx</a>
+            y escribirnos por webchat en
+            <a href="https://clip.mx/" target="_blank"
+              style="color: #0288d1; text-decoration: none; cursor: pointer;">www.clip.mx</a>.
+            <br><br>
+            Consulta <a target="_blank" href="https://dashboard.clip.mx/loans/faqs">dashboard.clip.mx/loans/faqs</a>
+            para más información.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="box-icon-left">
+        <a href="https://www.facebook.com/clipmx/" target="_blank">
+          <img width="32" height="32" alt="facebook"
+            src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/facebook-icon.png" />
+        </a>
+        <a href="https://twitter.com/clip_mx/" target="_blank">
+          <img width="32" height="32" alt="twitter"
+            src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/twitter-icon.png" />
+        </a>
+        <a href="https://www.youtube.com/user/clipmx/" target="_blank">
+          <img width="32" height="32" alt="youTube"
+            src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/youtube-icon.png" />
+        </a>
+        <a href="https://www.instagram.com/clip.mx/" target="_blank">
+          <img width="32" height="32" alt="instagram"
+            src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/instagram-icon.png" />
+        </a>
+      </div>
+      <div class="box-icon-right">
+        <a href="https://play.google.com/store/apps/details?id=com.payclip.clip" target="_blank">
+          <img alt="play store" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/playstore.png" />
+        </a>
+        <a href="https://itunes.apple.com/app/id771245360" target="_blank">
+          <img alt="app store" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/apple-store.png" />
+        </a>
+      </div>
+      <div class="box-icon-bottom">
+        <span class="box-icon-left copyright" class="copyright">Copyright 2019 PayClip, Inc.</span>
+        <span class="box-icon-right copyright">
+          <a href="https://clip.mx/privacidad/" target="_blank">
+            Aviso de Privacidad
+          </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="https://clip.mx/terminos/" target="_blank">
+            Términos y Condiciones
+          </a>
+        </span>
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>

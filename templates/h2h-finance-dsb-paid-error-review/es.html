@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!--<![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+    table {border-collapse: collapse;}
+    table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+    img {-ms-interpolation-mode: bicubic;}
+    </style>
+    <![endif]-->
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <!-- Barlow Font -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            max-height: 1200px !important;
+            margin: 0px;
+            font-family: 'Barlow', 'Roboto', helvetica, sans-serif;
+            box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -webkit-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -moz-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+        }
+
+        img.max-width {
+            max-width: 100% !important;
+        }
+
+        .emailBody {
+            font-size: 1rem;
+            border-top: 4px solid rgb(252, 76, 2);
+            padding: 20px 20px 40px;
+            box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -webkit-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -moz-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+        }
+
+        .emailBody p {
+            font-weight: 700;
+        }
+
+         table {
+            width: 90%;
+            padding: 10px;
+            border: 10px solid rgb(243, 243, 243);
+            background: rgb(243, 243, 243);
+            border-radius: 5px;
+            margin: auto;
+            text-align: center !important;
+            box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -webkit-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -moz-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(49, 49, 49);
+            background: white;
+            border-radius: 3px;
+            padding: 7px;
+        }
+
+        @media only screen and (max-width: 560px) {
+            body {
+                font-size: 10px !important;
+                margin: 0 !important;
+            }
+            th,
+            td {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <center class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+            <div>
+                <div style="font-size:6px;padding:20px 0px 20px 0px;" valign="top" align="center">
+                    <img class="max-width" border="0" style="display:block;color:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;font-size:16px;"
+                         width="60" height="60" src="https://s3-us-west-2.amazonaws.com/747733430d60b80427a2d4f5d7d73c26/clip_logo.png"
+                         alt="logo">
+                </div>
+                <div align="left" style="margin-left: 30px;">
+                    <h2 style="color: rgb(252, 76, 2);">Autorización de cambio de estatus de pagos (PAID a ERROR)</h2>
+                </div>
+            </div>
+        </center>
+        <div class='emailBody'>
+            <p>Hola,</p>
+            <p>
+                Te notificamos que {{username}} acaba de hacer una solicitud de cambio de estatus de {{dsb_list_size}} pagos de PAID
+                a ERROR, para poder completar el proceso necesita de tu autorización, esta actividad la puedes ejecutar en el módulo de REVIEW.
+            </p>
+            <p>
+                El detalle de la solicitud se encuentra a continuación:
+            </p>
+            <table>
+                <thead>
+                    <th>Report ID</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Report Date</th>
+                </thead>
+                <tbody>
+                {{#each dsb_list}}
+                    <tr>
+                        <td>{{report_id}}</td>
+                        <td>${{amount}}</td>
+                        <td>{{status}}</td>
+                        <td>{{report_date}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+            <p>Gracias.</p>
+        </div>
+    </div>
+</body>
+
+</html>

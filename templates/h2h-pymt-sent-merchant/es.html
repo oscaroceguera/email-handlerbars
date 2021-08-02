@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!--<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+      <xml>
+      <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {width: 600px;margin: 0 auto;}
+        table {border-collapse: collapse;}
+        table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+        img {-ms-interpolation-mode: bicubic;}
+      </style>
+      <![endif]-->
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <!-- Barlow Font -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      max-width: 1200px !important;
+      max-height: 1400px !important;
+      margin: 0px;
+      font-family: 'Barlow', 'Roboto', helvetica, sans-serif;
+    }
+
+    a {
+      color: rgb(252, 76, 2) !important;
+      text-decoration: none !important;
+    }
+
+    a:visited {
+      color: rgb(252, 76, 2) !important;
+      text-decoration: none !important;
+    }
+
+    td {
+      font-weight: 700;
+    }
+
+    h3 {
+      text-align: center;
+      color: rgb(252, 76, 2);
+      text-decoration: underline solid !important;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .bodyWrapper {
+      max-width: inherit;
+      width: 80%;
+      margin: auto;
+    }
+
+    .emailBody {
+      width: 100%;
+      padding: 20px;
+      margin-top: 20px;
+      border-top: 4px solid rgb(252, 76, 2);
+      box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+      -webkit-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+      -moz-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+    }
+
+    .depositInfoWrapper {
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      border: 10px solid rgb(243, 243, 243);
+      border-radius: 3px;
+      text-align: center;
+    }
+
+    .depositDetails {
+      display: inline-block;
+      display: -webkit-inline;
+    }
+
+    .leftSide {
+      text-align: right;
+      float: left;
+    }
+
+    .rightSide {
+      text-align: left;
+      font-weight: 700;
+      margin-left: 5px;
+      float: right;
+    }
+
+    .disclaimer {
+      background-color: rgb(240, 240, 240);
+      padding: 10px;
+      text-align: center;
+      border-radius: 15px;
+      font-size: 12px;
+      color: rgb(53, 53, 53);
+      margin-top: 25px;
+    }
+
+    .terms {
+      width: 105%;
+      display: block;
+      padding-top: 15px;
+    }
+
+    table.wrapper {
+      width: 100% !important;
+      table-layout: fixed;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    img.max-width {
+      max-width: 100% !important;
+    }
+
+    @media only screen and (max-width: 560px) {
+      body {
+        font-size: 10px !important;
+        margin: 0 !important;
+      }
+
+      .bodyWrapper {
+        width: 100%;
+        padding: 5px;
+      }
+
+      h3,
+      h5 {
+        font-size: 7px !important;
+      }
+
+      .emailBody {
+        padding: 5px;
+      }
+
+      .depositDetails {
+        font-size: 7px !important;
+      }
+
+      .disclaimer {
+        font-size: 7px !important;
+      }
+
+      .terms {
+        padding: 0 !important;
+        font-size: 5px !important;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class='bodyWrapper'>
+    <center class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%"
+      style="table-layout: fixed;margin-top:20px;">
+      <tr>
+        <td style="font-size:6px;line-height:10px;padding:24px 0px 24px 0px;" valign="top" align="center">
+          <img class="max-width" border="0"
+            style="display:block;color:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;font-size:16px;"
+            width="60" height="60"
+            src="https://s3-us-west-2.amazonaws.com/747733430d60b80427a2d4f5d7d73c26/clip_logo.png" alt="logo">
+        </td>
+      </tr>
+    </center>
+    <div class='emailBody'>
+      <p> Hola</p>
+      <p>Te informamos que hemos girado la instrucción para que se realice el depósito correspondiente a:</p>
+      <table>
+        <tr>
+          <td>{{merchantName}}</td>
+        </tr>
+        <tr>
+          <td>{{reportDate}}</td>
+        </tr>
+        <tr>
+          <td>Clave de Pago : {{reportId}}</td>
+        </tr>
+        <tr>
+          <td>Fecha de Pago : {{reportDate}}</td>
+        </tr>
+      </table>
+      <p> A continuación, te damos los datos para obtener el comprobante electrónico de pago:</p>
+      <section class='depositInfoWrapper'>
+        <h3>
+          COMPROBANTE ELECTRÓNICO DE PAGO
+        </h3>
+        <div class='underline'></div>
+        <div class='depositDetails'>
+          <div class='leftSide'>
+            <p>Fecha de Operación: </p>
+            <p>Banco emisor del pago: </p>
+            <p>CLABE de la cuenta beneficiaria: </p>
+            <p>Concepto del pago: </p>
+            <p>Monto: </p>
+            <p>Clave de rastreo: </p>
+          </div>
+          <div class='rightSide'>
+            <p>{{reportDate}}</p>
+            <p>{{bankAccountName}}</p>
+            <p>{{bankAccount}}</p>
+            <p>{{reportId}}</p>
+            <p>{{amount}}</p>
+            <p>{{trakingKey}}</p>
+          </div>
+        </div>
+        <div class='disclaimer'>
+          <p> El presente comprobante electrónico de pago es emitido por PAYCLIP S. DE R.L. DE C.V. con fines
+            informativos. Para
+            mayor información o aclaraciones respecto de este Comprobante el usuario deberá consultar a la entidad que
+            lleve
+            la cuenta en la que se depositaron los recursos, o consultar el estado de pagos interbancarios en
+            http://www.banxico.org.mx/cep/
+            y llenar la solicitud con la información aquí proporcionada</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>
+            Si tienes alguna pregunta, nuestro equipo de Customer
+            Happiness está listo para ayudarte.
+            <br />
+            Llámanos de lunes a viernes de 8:30 a.m. a 8:30 p.m.
+            sábados y domingos de 10 a.m a 5 p.m o escríbenos por
+            Whatsapp al
+            <a href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data="
+              style="color: rgb(248, 130, 5); text-decoration: none; cursor: pointer;">
+              55 6393 2323</a>. También nos puedes mandar un email a
+            <a href="mailto:help@clip.mx"
+              style="color: #0288d1; text-decoration: none; cursor: pointer;">help@clip.mx</a>
+            y escribirnos por webchat en
+            <a href="https://clip.mx/" target="_blank"
+              style="color:rgb(248, 130, 5); text-decoration: none; cursor: pointer;">www.clip.mx</a>.
+          </p>
+          <p>
+            Consulta
+            <a href="https://ayuda.clip.mx" target="_blank"
+              style="color:rgb(248, 130, 5); text-decoration: none; cursor: pointer;">ayuda.clip.mx</a>
+            para más información.
+          </p>
+          <p style="text-align:center; margin-top:35px;">El equipo de Clip</p>
+        </div>
+      </section>
+    </div>
+    <div class='terms'>
+      <h5 style='float:left;'>Copyright 2018 PayClip, Inc.</h5>
+      <h5 style='float:right; margin-left:5px;'>
+        <a href="https://clip.mx/terminos/" target='blank'>| Términos y condiciones </a>
+      </h5>
+      <h5 style='float:right;'>
+        <a href="https://clip.mx/privacidad/" target='blank'>Aviso de privacidad | </a>
+      </h5>
+    </div>
+  </div>
+</body>
+
+</html>

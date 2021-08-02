@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /* footer */
+    .content-footer {
+      text-align: left;
+      width: 600px;
+    }
+
+    .box-icon {
+      display: block;
+      margin: 22px auto 0;
+      height: 40px;
+    }
+
+    .box-copyright {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      margin-top: 10px;
+      color: #455a64;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 18px;
+      text-decoration: none;
+      border-top: 0.5px solid #efefef;
+      height: 40px;
+    }
+
+    .box-copyright .box-copyright-right a {
+      color: #455a64;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 18px;
+      padding-bottom: 24px;
+      text-decoration: none;
+    }
+
+    .box-copyright .box-copyright-left a {
+      color: #455a64;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 18px;
+      padding-bottom: 24px;
+      text-decoration: none;
+    }
+
+    .box-icon-left,
+    .box-copyright-left {
+      float: left;
+    }
+
+    .box-icon-right,
+    .box-copyright-right {
+      float: right;
+    }
+
+    .copyright-privacity,
+    .copyright-separator,
+    .copyright-condition {
+      float: left;
+    }
+
+    /* images */
+    .logo-clip {
+      margin: 30px 0 30px 0;
+      width: 56px;
+    }
+
+    .money {
+      width: 600px;
+      height: 80px;
+    }
+
+    .money-mobile {
+      display: none;
+      width: 343px;
+      height: 81px;
+    }
+
+    .divisor-clip {
+      text-align: center;
+    }
+
+    .divisor-clip img {
+      padding: 24px 0 32px;
+      width: 100%;
+      height: auto;
+      max-width: 530px;
+    }
+
+    .network-icons {
+      margin: 0 5px 0 5px;
+    }
+
+    .store-icons {
+      margin: 0 10px 0 0px;
+    }
+
+    /* decoration */
+    .text-decoration {
+      color: #0288d1 !important;
+      text-decoration: none;
+    }
+
+    /* general body */
+    .shadow {
+      width: 603px;
+      border-top: 2px solid #f9f9f9;
+      border-left: 2px solid #f9f9f9;
+      border-right: 2px solid #ececec;
+      border-bottom: 2px solid #ececec;
+      background-color: #ffffff;
+    }
+
+    .content-general {
+      text-align: justify;
+      width: 600px;
+      border-top: 4px solid #0288D1;
+    }
+
+    .content-header {
+      text-align: center;
+      font-weight: 500;
+      font-size: 36px;
+      color: #455A64;
+      letter-spacing: 0.57px;
+      line-height: 42px;
+      margin-left: 32px;
+      margin-right: 32px;
+      margin-top: 16px;
+    }
+
+    .content-header .deposit-value {
+      font-weight: bold;
+      font-size: 38px;
+      color: #455A64;
+      letter-spacing: 0.61px;
+      line-height: 42px;
+    }
+
+    .content-header div {
+      white-space: nowrap;
+    }
+
+    .content-presentation {
+      font-weight: 500;
+      font-size: 18px;
+      color: #455A64;
+      letter-spacing: 0;
+      line-height: 30px;
+      margin-left: 32px;
+      margin-right: 32px;
+      margin-top: 50px;
+    }
+
+    .content-body {
+      font-weight: 300;
+      font-size: 18px;
+      color: #455A64;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 30px;
+      margin-left: 32px;
+      margin-right: 32px;
+      margin-top: 8px;
+    }
+
+    .content-body .remember,
+    .content-body .payment {
+      margin-top: 8px;
+    }
+
+    .content-body .grow {
+      margin-top: 24px;
+    }
+
+    .content-body .interest-percent,
+    .content-body .deposit-value {
+      font-weight: 500;
+      font-size: 18px;
+      color: #455A64;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 30px;
+    }
+
+    .content-questions {
+      font-weight: 300;
+      font-size: 16px;
+      color: #455A64;
+      letter-spacing: 0;
+      line-height: 24px;
+      margin-left: 32px;
+      margin-right: 32px;
+      margin-bottom: 32px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .shadow {
+        width: 347px;
+      }
+
+      .content-general,
+      .content-footer {
+        text-align: justify;
+        width: 343px;
+      }
+
+      .box-icon,
+      .box-copyright {
+        height: 100%;
+        /* remove the 40px */
+      }
+
+      .box-icon-left,
+      .box-icon-right,
+      .box-copyright-left,
+      .box-copyright-right,
+      .copyright-privacity,
+      .copyright-separator,
+      .copyright-condition {
+        float: none;
+      }
+
+      .box-icon-right,
+      .box-copyright-left,
+      .copyright-privacity,
+      .copyright-condition {
+        margin-top: 16px;
+      }
+
+      .copyright-separator {
+        display: none;
+      }
+
+      .money {
+        display: none;
+      }
+
+      .money-mobile {
+        display: block;
+      }
+
+      .content-header {
+        font-size: 22px;
+        letter-spacing: 0.35px;
+        line-height: 22px;
+        margin-left: 20px;
+        margin-right: 18px;
+        margin-top: 12px;
+      }
+
+      .content-header .deposit-value {
+        font-size: 22px;
+        letter-spacing: 0.35px;
+        line-height: 22px;
+      }
+
+      .content-presentation {
+        font-size: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 40px;
+      }
+
+      .content-body {
+        font-size: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      .content-body .remember,
+      .content-body .payment,
+      .content-body .grow {
+        margin-top: 16px;
+      }
+
+      .content-questions {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body style="background:#F8FBFE;">
+  <center>
+    <div>
+      <img src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/clip-logo.png" alt="logo-clip"
+        class="logo-clip" />
+    </div>
+    <div class="shadow">
+      <div class="content-general">
+        <div class="content-image">
+          <img src="https://dev-ses-email-templates-assets.s3.amazonaws.com/loans/deposit-money-desktop.png"
+            alt="deposit-money" class="money" />
+          <img src="https://dev-ses-email-templates-assets.s3.amazonaws.com/loans/deposit-money-mobile.png"
+            alt="deposit-money" class="money-mobile" />
+        </div>
+        <div class="content-header">
+          <div class="credi">¡Tu Credi Clip por $ <span class="deposit-value">{{deposit_value}}</span></div>
+          <div class="account">llegó a tu cuenta bancaria!</div>
+        </div>
+        <div class="content-presentation">
+          Hola, {{merchant_name}}.
+        </div>
+        <div class="content-body">
+          <div class="enjoy">
+            ¡Ya puedes disfrutar de tu Credi Clip! Lo depositamos en tu cuenta bancaria registrada con Clip.
+          </div>
+          <div class="remember">
+            Recuerda que al día siguiente de que tu dinero haya sido depositado,
+            se tomará <span class="interest-percent">{{interest_percent}}</span>% sobre tus ventas diarias hasta que
+            reembolses
+            el monto total de tu Credi Clip por $<span class="deposit-value">{{payback_value}}</span>.
+          </div>
+          <div class="payment">
+            Podrás monitorear tus pagos en tu reporte de ventas diario y mensual.
+          </div>
+          <div class="grow">
+            ¡Sigue creciendo tu negocio! </br>Clip.
+          </div>
+        </div>
+        <div class="divisor-clip">
+          <img src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/divisor.png" alt="divisor" />
+        </div>
+        <div class="content-questions">
+          Si tienes alguna pregunta, nuestro equipo de Customer
+          Happiness está listo para ayudarte.
+          Llámanos de lunes a viernes de 8:30 a.m. a 8:30 p.m.
+          sábados y domingos de 10 a.m a 5 p.m o escríbenos por
+          Whatsapp al
+          <a href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data="
+            style=" text-decoration: none; cursor: pointer;">
+            55 6393 2323</a>. También nos puedes mandar un email a
+          <a href="mailto:help@clip.mx" style=" text-decoration: none; cursor: pointer;">help@clip.mx</a>
+          y escribirnos por webchat en
+          <a href="https://clip.mx/" target="_blank" style=" text-decoration: none; cursor: pointer;">www.clip.mx</a>.
+        </div>
+      </div>
+    </div>
+    <div class="content-footer">
+      <div class="box-icon">
+        <div>
+          <a class="network-icons" href="https://www.facebook.com/clipmx/" target="_blank"><img width="32" height="32"
+              alt="facebook"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/facebook-icon.png" /></a>
+          <a class="network-icons" href="https://twitter.com/clip_mx/" target="_blank"><img width="32" height="32"
+              alt="twitter" src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/twitter-icon.png" /></a>
+          <a class="network-icons" href="https://www.youtube.com/user/clipmx/" target="_blank"><img width="32"
+              height="32" alt="youTube"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/youtube-icon.png" /></a>
+          <a class="network-icons" href="https://www.instagram.com/clip.mx/" target="_blank"><img width="32" height="32"
+              alt="instagram"
+              src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/instagram-icon.png" /></a>
+        </div>
+      </div>
+      <div class="box-copyright">
+        <div class="box-copyright-left" class="copyright">Copyright 2019 PayClip, Inc.</div>
+        <div class="box-copyright-right">
+          <div class="copyright-privacity">
+            <a href="https://clip.mx/privacidad/" target="_blank">
+              Aviso de Privacidad
+            </a>
+          </div>
+          <div class="copyright-separator">
+            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          </div>
+          <div class="copyright-condition">
+            <a href="https://clip.mx/terminos/" target="_blank">
+              Términos y Condiciones
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>

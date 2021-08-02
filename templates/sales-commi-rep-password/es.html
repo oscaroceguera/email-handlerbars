@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html
+  data-editor-version="2"
+  class="sg-campaigns"
+  xmlns="http://www.w3.org/1999/xhtml"
+>
+  <head>
+    <title>ClipMx - Bienvenido a ComiClip</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap");
+      * {
+        font-family: "Barlow", sans-serif !important;
+      }
+
+      body {
+        line-height: 1;
+        background: #f8fbfe;
+      }
+
+      /* content */
+      .shadow {
+        width: 608px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+        margin-bottom: 32px;
+      }
+
+      .content {
+        width: 605px;
+        background-color: #fff;
+        border: 1px solid #f9f9f9;
+        text-align: center;
+        color: #455a64;
+        font-size: 16px;
+        font-weight: 200;
+      }
+
+      .logo-clip {
+        margin: 30px 0 30px 0;
+        width: 56px;
+      }
+
+      .container-header {
+        padding-top: 13px;
+        background-image: url("https://747733430d60b80427a2d4f5d7d73c26.s3-us-west-2.amazonaws.com/foto_commi_password.png");
+        width: 100%;
+        height: 208px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100%;
+      }
+
+      .container-header span {
+        width: 290px;
+        padding-left: 22px;
+        padding-top: 7%;
+        float: left;
+        text-align: left;
+        font-size: 48px;
+        font-style: italic;
+        font-weight: bold;
+        letter-spacing: 0.57px;
+        line-height: 0.99;
+        color: #ffffff;
+      }
+
+      .grey-text {
+        margin: 9%;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        text-align: center;
+        color: #c6d1d7;
+      }
+
+      .commi_name {
+        font-size: 24px;
+        letter-spacing: 0.37px;
+        text-align: center;
+        color: #455a64;
+        margin-bottom: 1%;
+      }
+
+      .big-margin {
+        margin-top: 10%;
+      }
+
+      .pass-container {
+        min-height: 150px;
+        background-color: #455a64;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.33px;
+        text-align: center;
+        padding-top: 6%;
+        margin-bottom: 10%;
+      }
+
+      .pass-text {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 3%;
+        padding-bottom: 7%;
+        text-align: left;
+        width: 17rem;
+      }
+
+      .empowerment {
+        margin: 10%;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.29;
+        text-align: center;
+        color: #78909c;
+      }
+
+      .lock {
+        margin-bottom: 4%;
+        width: 30px;
+        height: 40px;
+        margin-right: 5%;
+      }
+
+      .bold {
+        font-weight: 600;
+      }
+
+      .small-margin {
+        margin-top: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img
+        class="logo-clip"
+        src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/clip-logo.png"
+        alt="logo-clip"
+      />
+      <div class="shadow">
+        <div class="content">
+          <div class="container-header">
+            <span>Contraseña<br />Comiclip!</span>
+          </div>
+          <div class="container-content">
+            <div class="grey-text">TU NUEVA CONTRASEÑA</div>
+            <div class="commi_name">Hola,</div>
+            <div>Ya ha sido asignada la contraseña a tu commi</div>
+          </div>
+          <div class="pass-container big-margin">
+            <table
+              align="center"
+              cellspacing="0"
+              cellpadding="0"
+              style="margin-bottom: 16px; margin-top: 5%;"
+            >
+              <td>
+                <span class="pass-text">
+                  <span class="bold">{{commi_name}}</span>
+                  <div>
+                    <span class="bold">Commi ID:</span>
+                    <span>{{commi_id}}</span>
+                  </div>
+                  <div class="small-margin">
+                    <span class="bold">Password:</span>
+                    <span>{{commi_pass}}</span>
+                  </div>
+                </span>
+              </td>
+            </table>
+          </div>
+          <div class="empowerment">Incrementar mis ventas, ¡Me hace Clip!</div>
+
+          <!-- Social media & Copyright -->
+          <table
+            align="center"
+            cellspacing="0"
+            cellpadding="0"
+            width="100%"
+            style="margin-bottom: 32px; max-width: 640px;"
+          >
+            <tr>
+              <td>
+                <table
+                  align="center"
+                  cellspacing="0"
+                  cellpadding="0"
+                  style="margin-bottom: 16px;"
+                >
+                  <td>
+                    <a href="https://www.facebook.com/clipmx/" target="_blank">
+                      <img
+                        alt="clip facebook"
+                        src="{{ assetsUrl }}/common/facebook.png"
+                        width="32"
+                        style="margin: 0 4px;"
+                      />
+                    </a>
+                  </td>
+                  <td>
+                    <a href="https://twitter.com/clip_mx/" target="_blank">
+                      <img
+                        alt="clip twitter"
+                        src="{{ assetsUrl }}/common/twitter.png"
+                        width="32"
+                        style="margin: 0 4px;"
+                      />
+                    </a>
+                  </td>
+                  <td>
+                    <a href="https://www.youtube.com/user/clipmx/" target="_blank">
+                      <img
+                        alt="clip youtube"
+                        src="{{ assetsUrl }}/common/youtube.png"
+                        width="32"
+                        style="margin: 0 4px;"
+                      />
+                    </a>
+                  </td>
+                  <td>
+                    <a href="https://www.instagram.com/clip.mx/" target="_blank">
+                      <img
+                        alt="clip instagram"
+                        src="{{ assetsUrl }}/common/instagram.png"
+                        width="32"
+                        style="margin: 0 4px;"
+                      />
+                    </a>
+                  </td>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p
+                  style="font-size: 13px; color: #455a64;text-align: center; margin: 0 auto; padding-bottom: 1%;"
+                >
+                  Copyright 2019 PayClip, Inc.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: center; margin: 0 auto;">
+                  <a
+                    href="https://clip.mx/privacidad/"
+                    target="_blank"
+                    style="font-size: 13px;
+                           text-decoration: none;
+                           color: #455a64;
+                           margin-right: 5px;"
+                    >Aviso de Privacidad
+                  </a>
+                  |
+                  <a
+                    href="https://clip.mx/terminos/"
+                    target="_blank"
+                    style="font-size: 13px;
+                           text-decoration: none;
+                           color: #455a64;
+                           margin-left: 5px;"
+                  >
+                    Términos y Condiciones
+                  </a>
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- Social media & Copyright -->
+
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

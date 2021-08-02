@@ -1,0 +1,324 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <!--[if gte mso 15]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acepta los terminos y condiciones de mlm</title>
+  <link
+      href="https://fonts.googleapis.com/css?family=Barlow|Barlow:700|Barlow:600|Barlow:500|Barlow:400"
+      rel="stylesheet"
+  />
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      align-content: center;
+      align-self: center;
+      background-color: #FFF;
+      color: #001724;
+      font-family: "Barlow", sans-serif;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .container {
+      border-top: 4px solid red;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .footer {
+      padding: 42px 0;
+    }
+    .helpContainer {
+      background-color: #FAFAFA;
+      color: #66737B;
+      font-family: "Barlow";
+      font-size: 14px;
+      font-style: normal;
+      line-height: 17px;
+      padding: 16px 24px;
+      margin-top: 32px;
+    }
+    .helpContainer-title{
+      margin: 0px;
+      padding: 0px;
+    }
+    .helpContainer-info{
+      margin: 0px;
+      padding: 0px;
+    }
+    .clip-logo {
+      padding: 32px 0;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #001724;
+      font-family: "Barlow";
+      font-size: 24px;
+      margin-top: 0;
+      padding: 0 16px;
+      text-align: center;
+    }
+    .inviteMessage {
+      color: #001724;
+      font-family: "Barlow";
+      font-size: 16px;
+      padding-bottom: 14px;
+      padding-left: 14px;
+      padding-right: 14px;
+      text-align: center;
+    }
+    .inviteExpiration {
+      color: #00707F;
+      font-family: "Barlow";
+      font-size: 16px;
+      font-weight: 600;
+      padding-bottom: 0;
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      text-align: center;
+    }
+    .inviteAcceptBtn {
+      background-color: #FC4C02;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-family: "Barlow";
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      max-width: 288px;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      margin: 32px 0;
+    }
+    ul {
+      width: 290px;
+      padding: 0;
+      list-style-type: none;
+      margin: 0 auto;
+    }
+    li {
+      display: flex;
+      padding: 16px 0;
+      align-items: center;
+    }
+    .liIcon{
+      margin-right: 8px;
+    }
+    .liIcon > img {
+      width: 42px;
+    }
+    .liText {
+      font-family: "Barlow";
+      font-size: 14px;
+      color: #001724;
+    }
+    span {
+      color:#FC4C02;
+    }
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .clipLinks {
+      color:#FC4C02;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .social-media-container{
+      border: 1px solid;
+    }
+    .logo-social {
+      width: 27px;
+      object-fit: contain;
+      margin-right: 15px;
+    }
+    .footer-helps {
+      font-family: "Barlow";
+      font-size: 12px;
+      color: #001724;
+      line-height: 16px;
+      font-weight: normal;
+      padding-top: 32px;
+    }
+    .footer-helps-links {
+      color: #001724;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .copyright {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width:480px) {
+      .inviteMessage {
+        font-size: 18px;
+        padding-left: 120px;
+        padding-right: 120px;
+      }
+      .helpContainer {
+        padding: 16px 90px;
+      }
+      ul {
+        width: 410px;
+      }
+    }
+  </style>
+</head>
+<body >
+  <div class="container">
+    <div class="header">
+      <center>
+        <img class="clip-logo" src="{{ assetsUrl }}/common/logo-clip.png" alt="Logo Clip" width="68" />
+      </center>
+      <h1>Recibiste una invitación de enlace</h1>
+      <p class="inviteMessage">
+        <strong>{{parentMerchantName}}</strong> te envió una invitación para que enlaces tu unidad de negocio a su cuenta principal
+      </p>
+      <img
+        src="{{assetsUrl}}/welcome-email/congrats-agent-green.png"
+        alt="Congrats"
+        width="100%" 
+      />
+      <p class="inviteExpiration">
+        Tienes 72 horas para aceptar esta invitación.
+      </p>
+      <center>
+        <a ses:no-track href="{{ acceptTermsAndCondLink }}" class="inviteAcceptBtn">
+          Aceptar invitación
+        </a>
+      </center>
+      <h1>Algunos beneficios</h1>
+        <ul>
+          <li>
+            <div class='liIcon'>
+              <img src="{{assetsUrlIcons}}email.png"  />
+            </div>
+            <div class="liText">Comparte información de manera práctica y sencilla</div>
+          </li>
+          <li>
+            <div class='liIcon'>
+              <img src="{{assetsUrlIcons}}email.png"  />
+            </div>
+            <div class="liText">
+              Seguridad al compartir datos de tu unidad a <strong>{{parentMerchantName}}</strong>
+            </div>
+          </li>
+          <li>
+            <div class='liIcon'>
+              <img src="{{assetsUrlIcons}}email.png"  />
+            </div>
+            <div class="liText">
+              Agiliza la gestión, reporteo y análisis a la cuenta principal
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="helpContainer">
+      <p class="helpContainer-title"><strong>¿Necesitas ayuda?</strong></p>
+      <p class="helpContainer-info">
+        Nuestro servicio de atención a clientes Customer Happiness® te brinda atención personalizada los 7 días de la semana, las 24 h del día. Escríbenos por WhatsApp o llámanos al <a href="tel:015563932323" class="clipLinks">55 6393-2323</a>. Envía un correo a <a href="mailto:help@clip.mx" class="clipLinks">help@clip.mx</a> o solicita apoyo en el chat de <a href="https://clip.mx/" target="_blank" class="clipLinks">clip.mx</a>.
+      </p>
+    </div>
+    <div class="footer">
+        <center>
+          <a
+            href="https://www.facebook.com/clipmx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class=""
+          >
+            <img
+              src="{{assetsUrl}}/welcome-email/facebook.png"
+              alt="clip-facebook"
+              class="logo-social"
+            />
+          </a>
+          <a
+            href="https://twitter.com/clip_mx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class=""
+          >
+            <img
+              src="{{assetsUrl}}/welcome-email/twitter.png"
+              alt="clip-facebook"
+              class="logo-social"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/user/clipmx/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class=""
+          >
+            <img
+              src="{{assetsUrl}}/welcome-email/youtube.png"
+              alt="clip-facebook"
+              class="logo-social"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/clip.mx/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class=""
+          >
+            <img
+              src="{{assetsUrl}}/welcome-email/instagram.png"
+              alt="clip-facebook"
+              class="logo-social"
+            />
+          </a>
+
+          <div class="footer-helps">
+            <div class="copyright">
+              ©2021 PayClip, Inc. Algunos Derechos Reservados.
+            </div>
+            <a
+              href="https://clip.mx/privacidad/?utm_source=daily_sales_report_email&utm_medium=email&utm_campaign=click_privacy_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="font-weight: normal;"
+              class="footer-helps-links"
+            >
+              Aviso de Privacidad
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a
+              href="https://clip.mx/terminos/?utm_source=daily_sales_report_email&utm_medium=email&utm_campaign=click_terms_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="font-weight: normal;"
+              class="footer-helps-links"
+            >
+              Términos y Condiciones
+            </a>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

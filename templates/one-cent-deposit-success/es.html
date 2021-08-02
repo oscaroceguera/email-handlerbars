@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hicimos un depósito a tu cuenta</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow:700|Barlow:600|Barlow:500" rel="stylesheet">
+  <style type="text/css">
+    * {
+      font-family: Barlow, sans-serif !important;
+      margin: auto;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #FFF;
+    }
+
+    .wrapper-container {
+      margin: auto;
+      max-width: 832px;
+      min-height: 1284px;
+      background-color: #FFF;
+      border: 1px solid #DDD;
+      border-top: 4px solid #FC4C02;
+    }
+
+    .wrapper-container div.title p {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 0px;
+      font-weight: 600;
+    }
+
+    .wrapper-container .logo {
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+
+    .wrapper-container .logo img {
+        margin: auto;
+        display: block;
+        width: 390px;
+        height: 90px;
+        object-fit: contain;
+        margin-top: 40px;
+    }
+
+    .wrapper-container .logo img.logo_img {
+      width: 68px;
+      height: 68px;
+    }
+
+    .wrapper-container .header-img {
+      text-align: center;
+      width: 544px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+    .wrapper-container .header-img img{
+      width:160px;
+    }
+    .wrapper-container .header-img .xpay-img {
+      width: 274px;
+    }
+    .wrapper-container .header-text {
+      width: 544px;
+      font-family: Barlow;
+      font-size: 36px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.11;
+      letter-spacing: normal;
+      text-align: center;
+      color: #001724;
+      margin-bottom: 24px;
+    }
+    .wrapper-container .header-content {
+      width: 544px;
+      height: 40px;
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+      text-align: center;
+      color: #001724;
+    }
+
+    .wrapper-container .disclaimer {
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: center;
+      color: #001724;
+      margin-top: 24px;
+      margin-bottom: 80px;
+    }
+
+    .wrapper-container .footer {
+      margin: auto;
+      margin-top: 51px;
+      width: 100%;
+      height: 162px;
+      background-color: #d0d0d0;
+      padding-top: 15px;
+    }
+
+    .wrapper-container .footer p.text {
+      margin: auto;
+      width: 498px;
+      height: 95px;
+      font-family: Barlow;
+      font-size: 13.5px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+    }
+
+    .wrapper-container .social {
+      margin: auto;
+      margin-top: 39px;
+    }
+
+    .wrapper-container .privacidad {
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+    @media(max-width: 787px) {
+      .wrapper-container {
+        max-width: 832px;
+        min-height: 1284px;
+      }
+
+      .wrapper-container .header-text {
+        margin: auto;
+        margin-top: 31px;
+        width: 229px;
+        font-family: Barlow;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 1;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #323232;
+      }
+    }
+
+    .footer-contact {
+      background-color: #f5f7fa;
+    }
+
+    .footer-contact-text {
+      padding: 24px 48px 24px 48px;
+      width: 545px;
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+      margin: auto; 
+    }
+
+    .footer-contact-text .text-link {
+      color: #0280c4;
+    }
+
+    .video-container {
+      margin-bottom: 80px;
+      background: url({{assetsUrl}}/video-preview.png);
+      width: 329px;
+      height: 180px;
+      object-fit: contain;
+      background-size: contain;
+    }
+    .video-button {
+      padding: 52px 78px;
+      object-fit: contain;
+    }
+
+    .video-button img {
+      width: 164px;
+    }
+  </style>
+</head>
+
+<body>
+    <div class='wrapper-container'>
+      <div class="logo">
+          <img class="max-width" border="0"
+              src="{{assetsUrl}}/clip-logo.png"
+              alt="Logo Clip" data-proportionally-constrained="true" class="logo_img">
+      </div>
+      <div class="header-text">
+          <p>¡Ya tienes tu primer depósito!</p>
+      </div>
+      <div class="header-content">
+          <p>
+            {{name}}, depositamos 1 centavo* a la cuenta que diste de alta en Clip
+            para verificar tu información bancaria. ¡Todo salió bien!
+          </p>
+      </div>
+      <div class = "header-img">
+        <img src = "{{assetsUrl}}/genera4.png">
+      </div> 
+      
+      <div class="header-content">
+        <p>
+          Avísale a tus clientes que ya aceptas pagos con todas las tarjetas de crédito
+          y débito, vales y Samsung Pay.
+        </p>
+      </div>
+      <div class= "disclaimer">
+        <p>
+            *Identifícalo como $0.01 MXN POCKETGROUP TECHNOLOGIES SA DE CV.
+        </p>
+      </div>
+      <div class="header-text">
+          <p>Conoce cómo hacer tu primera transacción:</p>
+      </div>
+      <a href ="https://www.youtube.com/watch?v=ylCO7esoMPA" target = "_blank">
+        <div class = "video-container">
+          <div class = "video-button">
+            <img src = "{{assetsUrl}}/button.png">
+          </div>
+        </div>
+      </a>
+      <div class="header-text">
+          <p>Por cierto, ¿ya probaste
+              Pagos a Distancia Clip?</p>
+      </div>
+      <div class="header-content">
+          <p>
+              Con este servicio tus clientes pueden pagarte con tarjeta de crédito y débito desde donde estén.
+          </p>
+      </div>
+      <div class = "header-img">
+        <img class = "xpay-img" src = "{{assetsUrl}}/transaction.png">
+      </div> 
+      <div class="footer-contact">
+        <div class="footer-contact-text">
+          ¿Necesitas ayuda? Nuestro equipo de Customer Happiness® te atiende sin menú de espera.
+          <br />
+          Llámanos o mándanos un WhatsApp al<a class="text-link" target="_blank"
+            href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data="> 55 6393-2323</a> de lunes a viernes de 8:30 a 20:30 h, sábados y domingos de 10 a 17 h. 
+          Envía un correo a <a class="text-link" target="_blank"
+          href="mailto:help@clip.mx">help@clip.mx</a> o chatea con una persona en <a class="text-decoration" target="_blank"
+          href="https://www.clip.mx">www.clip.mx.</a>
+        </div>
+      </div>
+      <div class="social">
+        <table align="center" cellspacing="0" cellpadding="0" style="margin-bottom: 16px;">
+          <td>
+            <a href="https://www.facebook.com/clipmx/" target="_blank"><img alt="clip facebook"
+                src="{{assetsUrl}}/facebook-icon.png" width="32" style="margin: 0 4px;" /></a>
+          </td>
+          <td>
+            <a href="https://twitter.com/clip_mx/" target="_blank"><img alt="clip twitter"
+                src="{{assetsUrl}}/twitter-icon.png" width="32" style="margin: 0 4px;" /></a>
+          </td>
+          <td>
+            <a href="https://www.youtube.com/user/clipmx/" target="_blank"><img alt="clip youtube"
+                src="{{assetsUrl}}/youtube-icon.png" width="32" style="margin: 0 4px;" /></a>
+          </td>
+          <td>
+            <a href="https://www.instagram.com/clip.mx/" target="_blank">
+              <img alt="clip instagram" src="{{assetsUrl}}/instagram-icon.png" width="32"
+                style="margin: 0 4px;" /></a>
+          </td>
+        </table>
+      </div>
+      <div class="privacidad">
+        <div>
+          <p style="font-size: 12px; color: #455a64;text-align: center; margin: 0 auto;">
+            Copyright 2020 PayClip, Inc.
+          </p>
+        </div>
+        <br />
+        <div>
+          <p style="text-align: center; margin: 0 auto;">
+            <a href="https://clip.mx/privacidad/" target="_blank" style="font-size: 12px;
+                            text-decoration: none;
+                            color: #455a64;
+                            margin-right: 5px;">Aviso de Privacidad
+            </a>
+            |
+            <a href="https://clip.mx/terminos/" target="_blank" style="font-size: 12px;
+                            text-decoration: none;
+                            color: #455a64;
+                            margin-left: 5px;">
+              Términos y Condiciones
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--[if gte mso 15]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG />
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+  <title>ClipMx - Payment Request</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,700  " rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #F8FBFE;
+    }
+    ul {
+      list-style-type: circle;
+      padding-inline-start: 0;
+      margin-left: 90px;
+    }
+    ul > li {
+      display: flex;
+      text-align: left;
+      width: 100%;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      line-height: 25px;
+    }
+    ul li::before {
+      content: "\2022";
+      color: #0074b7;
+      display: inline-block; 
+      width: 1em;
+      font-size: 2em;
+    }
+    .image {
+      margin: 0 auto;
+      margin-bottom: 40px; 
+      height: 51px;
+    }
+    .mediaCoupon {
+        width: 90%;
+        height: 922px;
+        margin-top: 32px;
+        display: inline-block;
+        background: #d8d8d8;
+      }
+      .couponImage {
+        width: 100%;
+        height: 100%;
+      }
+    @media screen and (max-width:480px) {
+      .responsive-button {
+          width: 250px !important;
+        }
+      ul {
+        list-style: none;
+        padding-inline-start: 0;
+        margin-left: 55px !important;
+      }
+      .icons-left {
+        display: block;
+        padding: 30px 35px 30px 35px !important;
+      }
+      ul li::before {
+        content: "\2022";
+        color: #0074b7;
+        display: inline-block; 
+        width: 1em;
+        font-size: 2em;
+        margin-left: -1em;
+      }
+      .image {
+        width: 320px;
+        height: 45px;
+        margin: 0 auto;
+      }
+      .mediaCoupon {
+        width: 100% !important;
+        height: 620px !important;
+        margin-top: 32px !important;
+        background: #d8d8d8 !important;
+      }
+      .couponImage {
+        max-width: 100% !important;
+        height: 620px !important;
+      }
+    }
+    @media screen and (max-width:768px) {
+      .mediaCoupon {
+        width: 100%;
+        height: 922px;
+        margin-top: 32px;
+        background: #d8d8d8;
+      }
+      .couponImage {
+        max-width: 100%;
+        height: 620px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="margin: 0 auto;text-align: center;">
+    <div style="max-width: 640px;border-right: 2px solid #ececec;border-bottom: 2px solid #ececec;margin: 0 auto;">
+
+      <hr style="margin: 0; border-top: 4px solid #fc4c02;width: 100%;">
+      <div style="width: 100%;background-color: #FFF;border: 1px solid #f9f9f9;">
+        <div style="display: flex;padding: 28px 0 0px 0;width: 100%;height: 80px;background-repeat: no-repeat;background-size: 100% 100%;color: #455A64;">
+            <img class="image" src="{{assetsUrl}}/payment/enlace-clip.png" alt="clip" />
+        </div>
+        <span
+        style="display: block; color:#001724;font-size:30px;font-weight:700;font-stretch: normal;line-height: normal;letter-spacing: 0.45px;text-align: center;">
+            ¡{{merchant_name}} te envío un cupón!            
+        </span>
+        <span 
+          style="display: block; color:#001724;font-size:1.5em;font-weight: 600;font-stretch: normal;line-height: normal;letter-spacing: 0.45px;text-align: center; margin-top: 10px;">
+          usa el código 
+            <br> 
+          {{payment_request_code}}
+        </span>
+        <div class="mediaCoupon">
+          <img class="couponImage" src="{{assetsUrl}}/payment/coupon.jpg" alt="Clip Coupon">
+        </div>
+        
+        <div style="margin-top: 45px;background-color: #f5f7fa;text-align: center;padding: 30px 35px 30px 35px;">
+          <span style="color: #001724;font-size: 13px;font-weight: 400;line-height: normal;text-align: justify;">
+            ¿Necesitas ayuda? <br> Customer Happiness® te atiende 24/7, todo el año. 
+            <br><br>     
+            Escríbenos por WhatsApp o llámanos al
+            <a style="color: #0074b7;text-decoration: none;" target="_blank" href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data=">
+              55 6393-2323</a>. Envía un <br> correo a 
+            <a style="color: #0074b7;text-decoration: none;" target="_blank" href="mailto:help@clip.mx">help@clip.mx</a>
+                o solicita apoyo en el chat de
+            <a style="color: #0074b7;text-decoration: none;" target="_blank" href="https://www.clip.mx">
+                clip.mx.
+            </a>
+          </span>
+        </div>
+
+        <div style="width: 100vw;margin: 70px 0 200px 0;display: table-cell;">
+
+          <div style="margin: 0 auto; margin-top: 71px;">
+            <a style="margin-right: 16px;text-decoration: none;" href="https://www.facebook.com/clipmx/"
+              target="_blank">
+              <img width="32" height="32" alt="facebook" src="{{assetsUrl}}/common/facebook.png" />
+            </a>
+            <a style="margin-right: 16px;text-decoration: none;" href="https://twitter.com/clip_mx/" target="_blank">
+              <img width="32" height="32" alt="twitter" src="{{assetsUrl}}/common/twitter.png" />
+            </a>
+            <a style="margin-right: 16px;text-decoration: none;" href="https://www.youtube.com/user/clipmx/"
+              target="_blank">
+              <img width="32" height="32" alt="youTube" src="{{assetsUrl}}/common/youtube.png" />
+            </a>
+            <a style="margin-right: 16px;" href="https://www.instagram.com/clip.mx/" target="_blank">
+              <img width="32" height="32" alt="instagram" src="{{assetsUrl}}/common/instagram.png" />
+            </a>
+          </div>
+
+          <div style="padding-top: 13px;margin-top: 16px;font-size: 14px;line-height: 18px;color: #455A64;margin-bottom: 200px;">
+            <span style="font-size: 13px;">Copyright 2021 PayClip, Inc.</span>
+            <span style="display: block;width: 100%;margin-top: 20px;">
+              <a style="font-size: 13px;color: #455A64;text-decoration: none;" href="https://clip.mx/privacidad/"
+                target="_blank">
+                Aviso de Privacidad
+              </a> <br>
+              Al usar Enlace Clip aceptas los
+              <a style="font-size: 13px;color: #455A64;text-decoration: none;" href="https://mkt.clip.mx/es-mx/consulta-los-terminos-y-condiciones-pagos-a-distancia-clip"
+                target="_blank">
+                Términos y Condiciones.
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

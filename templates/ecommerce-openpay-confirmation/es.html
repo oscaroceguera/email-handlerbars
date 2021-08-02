@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!--<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+      body {width: 600px;margin: 0 auto;}
+      table {border-collapse: collapse;}
+      table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+      img {-ms-interpolation-mode: bicubic;}
+    </style>
+    <![endif]-->
+
+  <!-- Reset CSS -->
+  <style type="text/css">
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+      v2.0 | 20110126
+      License: none (public domain)
+    */
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      box-sizing: border-box;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+  </style>
+  <!-- Barlow Font -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <!--user entered Head Start-->
+  <style>
+    * {
+      font-family: Barlow, sans-serif !important;
+    }
+
+    a:visited {
+      color: #0288D1;
+      text-decoration: none;
+    }
+  </style>
+  <!--End Head user entered-->
+</head>
+
+<body style="background:#F8FBFE;">
+  <center>
+    <table cellpadding="0" cellspacing="0" border="0" style="font-size: 16px; color: #001724; width: 100%; max-width:600px; background-color: #ffffff; margin: 8px 0 30px 0; border-top: 2px solid #f54b5e; border-right: 1px solid #eceff1; border-left: 1px solid #eceff1; border-bottom: 1px solid #eceff1" align="center">
+      <tr>
+        <td style="text-align: center; padding: 50px 0 31px;">
+          <img src="{{assetsUrl}}/ecommerce-openpay-confirmation/clipOpenpay.png?v=1.0" alt="logo-clip" class="logo" width="228" />
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 40px 6.5% 40px 6.5%;">
+          <h1 style="font-size: 18px; font-weight: 600;">
+            {{#if firstName}}
+              Hola {{firstName}},
+            {{/if}}
+          </h1>
+          <span style="color: #323232; font-size: 16px; margin: 16px 0 32px; display: block; line-height: 19.2px; font-weight: 400;">
+            Está todo listo para que puedas pagar tu <br />
+            Clip con Openpay en tu tienda más <br />
+            cercana.
+            <a href="https://s3.amazonaws.com/public.openpay.mx/mapa-tiendas/index.html" target="_blank" style="color: #0288d1; text-decoration: none; font-weight: 500;">
+              Encuéntrala aquí
+            </a>.
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="color: #001724; padding: 16px 6.5%; background-color: #F0F6FA;">
+          <span style="font-size: 14px; font-weight: 600;">Total a pagar</span>
+          <h1 style="font-size: 36px; margin-top: 10px; font-weight: 700;">
+            ${{amount}}
+          </h1>
+          <div style="font-size: 14px; font-weight: normal; margin-top: 10px; color: #001724">
+            La comisión por recepción del pago varía de acuerdo a los términos
+            y condiciones que cada cadena comercial establece.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="color: #33454F; padding: 24px 6.5% 0 6.5%;">
+          <div style="font-size: 12px; font-weight: normal; font-family: Barlow; color: #33454F">
+            Algunos establecimientos afiliados no aceptan pagos mayores a $5,000.00 por políticas propias.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 40px 6.5% 40px 6.5%;">
+          <table style="width: 100%;">
+            <tr>
+              <td colspan="2" style="font-size: 18px;font-weight: 600;text-align: center;line-height: 21.6px;padding-bottom: 24px;">
+                ¿Cómo se paga con Openpay?
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;font-size: 18px; font-weight: 700; padding-right: 10px;">
+                1
+              </td>
+              <td style="font-size: 16px; font-weight: 400;">
+                Acude a cualquier tienda afiliada. Entrega al cajero el código de barras o número de referencia como un
+                pago de servicio Paynet.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 24px 6.5%; color: #001724; background-color: #F0F6FA;">
+          {{#if barcodeUrl}}
+            <div style="font-size: 16px; font-weight:600; text-align: center;">
+              Código de barras <br />
+              <img src="{{barcodeUrl}}" style="margin-top: 8.25px;" />
+            </div>
+          {{/if}}
+          <div style="font-size: 16px; font-weight:600; text-align: center; margin-top: 24.25px;">
+            Número de referencia
+            {{#if reference}}
+              <div style="font-size: 14px; font-weight: 400; margin-top: 8px; word-spacing: 5px">
+                {{reference}}
+              </div>
+            {{/if}}
+          </div>
+          <div style="font-size: 14px; padding: 10px; width: 100%; font-weight: 500; margin: auto; text-align: center;color: #001724;">
+            Válido hasta el
+            <span style="font-weight: 700;">{{validDate}}</span>
+            a las
+            <span style="font-weight: 700;">{{validTime}}</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 40px 6.5% 20px 6.5%; color: #001724">
+          <table style="width: 100%; font-size: 18px; line-height: 25px; text-align: left">
+            <tr>
+              <td style="vertical-align: top;font-size: 18px; font-weight: 700; padding-right: 10px;">
+                2
+              </td>
+              <td>
+                Realiza tu pago en efectivo y el cajero te entregará un comprobante. Verifica que tu pago se haya
+                realizado correctamente.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="padding: 20px 6.5% 40px 6.5%; color: #001724">
+          <table style="width: 100%; font-size: 18px; line-height: 25px; text-align: left">
+            <tr>
+              <td style="vertical-align: top;font-size: 18px; font-weight: 700; padding-right: 10px;">
+                3
+              </td>
+              <td>
+                Cuando tu pago se vea reflejado en nuestro sistema, enviaremos un correo electrónico con los detalles de
+                tu pedido y envío.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 26px 6.5% 70px 6.5%;">
+          <h1 style="font-size: 18px; font-weight: 600;text-align: center;">¿En qué tiendas puedo pagar?</h1>
+          <img style="width: 100%;margin-top: 16px;" src="{{assetsUrl}}/ecommerce-openpay-confirmation/conveniosOpenpay.png?v=1.0" alt="logos-empresas" />
+        </td>
+      </tr>
+      {{#if linkUpload}}
+      <tr>
+        <td align="center" style="padding: 26px 6.5% 70px 6.5%;">
+          <a href="{{linkUpload}}" target="_blank" style="background-color: #0074B7; text-decoration: none; margin: 0 auto; font-weight: 600; font-size: 16px; color: white; padding: 13px 24px; box-shadow: 0px 4px 6px -3px rgba(0, 116, 183, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.12); border-radius: 25px; border-style: none;">
+            Descargar recibo de compra
+          </a>
+        </td>
+      </tr>       
+      {{/if}}
+      {{#if products}}
+      <tr>
+        <td>
+          <div style="min-width: 318px; font-size: 18px; font-weight:bold; width: 85%; margin: auto;">
+            Resumen de tu pedido
+          </div>
+          {{#each products}}
+          <table style="min-width: 318px; width: 75%; text-align: center; margin: 13px auto 8px">
+            <tr style="font-size: 14px;">
+              <td style="width: 10%;">
+                <img src="{{assetsUrl}}/ecommerce-openpay-confirmation/{{productId}}.png" style="width: 71px" />
+              </td>
+              <td style="width: 45%; color: #001724; text-transform: capitalize; text-align: left;">
+                <div style="font-size: 16px;">
+                  {{productName}}
+                </div>
+                Cantidad: {{productQuantity}}
+              </td>
+              <td style="width: 45%;  text-align: right; font-size: 18px;">
+                <div>
+                  ${{calculatedAmount}}
+                </div>
+              </td>
+            </tr>
+          </table>
+          {{/each}}
+          <div
+            style="min-width: 318px; font-size: 18px; font-weight:bold; width: 75%; margin: 8px auto; border-top: 1px solid #dddddd;">
+            <table style="text-align: center; margin-bottom: 8px; margin-top: 13px; width: 100%;">
+              <tr style="font-size: 14px;">
+                <td style="width: 50%; text-align: left; font-size: 16px; ">
+                  Total
+                </td>
+                <td style="color: #323232; font-size: 18px;text-align: right; width: 50%;">
+                  ${{amount}}
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      {{/if}}
+      <tr>
+        <td style="text-align: center;">
+          <div style="display: block; margin:70px auto 0">
+            <div style="display: inline-block;padding: 0 25px 8px;">
+              <a href="https://www.facebook.com/clipmx/" target="_blank" style="text-decoration: none; margin-right: 10px;">
+                <img alt="facebook" src="{{assetsUrl}}/common/facebook.png" width="30" />
+              </a>
+              <a href="https://twitter.com/clip_mx/" target="_blank" style="text-decoration: none; margin-right: 10px;">
+                <img alt="twitter" src="{{assetsUrl}}/common/twitter.png" width="30" />
+              </a>
+              <a href="https://www.youtube.com/user/clipmx/" target="_blank" style="text-decoration: none; margin-right: 10px;">
+                <img alt="youTube" src="{{assetsUrl}}/common/youtube.png" width="30" />
+              </a>
+              <a href="https://www.instagram.com/clip.mx/" target="_blank" style="text-decoration: none;">
+                <img alt="instagram" src="{{assetsUrl}}/common/instagram.png" width="30" />
+              </a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 90%; font-size: 13px; text-align: center; padding-bottom: 80px; color: #323232">
+          <div style="padding: 16px 0;">
+            Copyright 2021 PayClip, Inc.
+          </div>
+          <div style="padding-top: 16px 0;">
+            <a href="https://clip.mx/privacidad/" style="text-decoration: none; color: #323232">
+              Aviso de Privacidad
+            </a>
+            | 
+            <a href="https://clip.mx/terminos/" style="text-decoration: none; color: #323232">
+              Términos y condiciones
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>

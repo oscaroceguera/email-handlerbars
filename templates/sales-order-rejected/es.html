@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <!--<![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+      <xml>
+      <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {width: 600px;margin: 0 auto;}
+        table {border-collapse: collapse;}
+        table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+        img {-ms-interpolation-mode: bicubic;}
+      </style>
+      <![endif]-->
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <!-- Barlow Font -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      max-width: 1200px !important;
+      max-height: 1200px !important;
+      margin: 0px;
+      font-family: 'Barlow', 'Roboto', helvetica, sans-serif;
+    }
+
+    a {
+      color: rgb(252, 76, 2) !important;
+      text-decoration: none !important;
+    }
+
+    a:visited {
+      color: rgb(252, 76, 2) !important;
+      text-decoration: none !important;
+    }
+
+    td {
+      font-weight: 700;
+    }
+
+    .bodyWrapper {
+      max-width: inherit;
+      width: 80%;
+      margin: auto;
+    }
+
+    .emailBody {
+      width: 100%;
+      padding: 20px;
+      margin-top: 20px;
+      border-top: 4px solid rgb(252, 76, 2);
+      box-shadow: 0px 8px 40px -12px rgb(177, 177, 177);
+      -webkit-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177);
+      -moz-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177);
+      font-size: 16px;
+    }
+
+    .terms {
+      width: 105%;
+      display: block;
+      padding-top: 15px;
+    }
+
+    table.wrapper {
+      width: 100% !important;
+      table-layout: fixed;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    img.max-width {
+      max-width: 100% !important;
+    }
+
+    .content-box-main.products {
+      border: 2px solid #f1f1f1;
+      padding: 0;
+      width: 100%;
+    }
+    .content-box-main.products thead {
+      background-color: #f1f1f1;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+    .content-box-main.products tbody td {
+      font-size: 10px;
+      text-align: center;
+    }
+    .content-box-main.products tfoot td {
+      font-weight: bold;
+      border-top: 1px solid #f1f1f1;
+    }
+    .content-box-main.products th,
+    .content-box-main.products td {
+      padding: 10px 15px;
+    }
+
+    @media only screen and (max-width: 560px) {
+      body {
+        font-size: 10px !important;
+        margin: 0 !important;
+      }
+      .bodyWrapper {
+        width: 100%;
+        padding: 5px;
+      }
+      h3,
+      h5 {
+        font-size: 7px !important;
+      }
+      .emailBody {
+        padding: 5px;
+      }
+      .terms {
+        padding: 0 !important;
+        font-size: 5px !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class='bodyWrapper'>
+    <center class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;margin-top:20px;">
+      <tr>
+        <td style="font-size:6px;line-height:10px;padding:24px 0px 24px 0px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block;color:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;font-size:16px;"
+            width="60" height="60" src="https://s3-us-west-2.amazonaws.com/747733430d60b80427a2d4f5d7d73c26/clip_logo.png"
+            alt="logo">
+        </td>
+      </tr>
+    </center>
+    <div class='emailBody'>
+      <p> Hola </p>
+      <p> Te informamos que Ingram ha rechazado la siguiente orden: </p>
+      <table class="content-box-main products" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+             width="100%" style="table-layout: fixed; font-family: DINPro, Helvetica, Arial, san-serif;">
+        <thead>
+        <tr>
+          <th>NETSUITE ID:</th>
+          <th>INGRAM ID:</th>
+          <th>ESTATUS:</th>
+        </tr>
+        </thead>
+        <tr>
+          <td>{{netsuiteId}}</td>
+          <td>{{ingramId}}</td>
+          <td>{{order.statusCode}}</td>
+        </tr>
+      </table>
+      <table class="table-p" width="100%" border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="margin:25px 0">
+        <tr>
+          <td style="font-family: DINPro, Helvetica, Arial, san-serif; text-align: left; font-size: 12px; line-height:24px; color:#666666; padding-bottom: 20px;">
+            <span style="color:#7e7e7e; text-transform:uppercase;font-size: 10px">DESCRIPCION:</span>
+            <br/>
+            <span>{{order.description}}</span>
+          </td>
+        </tr>
+      </table>
+      <p>Los detalles de la orden son:</p>
+      {{#if order.lines}}
+        {{#each order.lines}}
+        <table class="content-box-main products" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+               width="100%" style="table-layout: fixed; font-family: DINPro, Helvetica, Arial, san-serif;">
+          <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Estatus</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>{{this.itemName}}</td>
+            <td>{{this.amount}}</td>
+            <td>{{this.quantity}}</td>
+            <td>{{this.statusCode}}</td>
+          </tr>
+          </tbody>
+        </table>
+        <table class="table-p" width="100%" border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="margin:25px 0">
+          <tr>
+            <td style="font-family: DINPro, Helvetica, Arial, san-serif; text-align: left; font-size: 12px; line-height:24px; color:#666666; padding-bottom: 20px;">
+              <span style="color:#7e7e7e; text-transform:uppercase;font-size: 10px">DESCRIPCION:</span>
+              <br/>
+              {{this.statusDescription}}
+            </td>
+          </tr>
+        </table>
+        {{/each}}
+      {{else}}
+        <b>Producto no encontrado</b>
+      {{/if}}
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    .rectangle-orange {
+      width: 640px;
+      height: 4px;
+      background-color: #fc4c02;
+    }
+
+    .logo-clip {
+      margin: 36px 0 30px 0;
+      width: 68px;
+      height: 68px;
+    }
+
+    .congratulations-text {
+      margin: 0px 0 0px 0;
+      width: 544px;
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.4px;
+      text-align: center;
+      color: #323232;
+    }
+
+    .merchant-loan {
+      margin: 32px 0 30px 0;
+      width: 356px;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .loan-reason {
+      margin: 0px 0 48px 0;
+      width: 544px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+    }
+
+    .loan-options {
+      margin: 0px 0 48px 0;
+      width: 544px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+    }
+
+    .loan-payment-benefit {
+      margin: 48px 0 48px 0;
+      width: 544px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+    }
+
+    .credi-clip {
+      width: 240px;
+      height: 54px;
+      object-fit: contain;
+    }
+
+    .logo-clip-credi-clip {
+      margin: 48px 0 48px 0;
+      width: 240px;
+      height: 54px;
+      object-fit: contain;
+    }
+
+    .steps-header {
+      margin: 32px 0 0 0;
+      width: 404px;
+      height: 26px;
+      font-size: 18px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+    }
+
+    .steps-details-div {
+      margin: 24px 0 0 0;
+      width: 404px;
+      overflow: auto;
+    }
+
+    .steps-details-image-div {
+      margin: 1px 16px 1px 0;
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      float: left;
+    }
+
+    .steps-details-text-div {
+      width: 352px;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      text-align: left;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #323232;
+      float: right;
+    }
+
+    .steps-details-text-single-div {
+      margin-top: 9px;
+    }
+
+    .go-to-offers {
+      width: 271px;
+      height: 50px;
+      border-radius: 2px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+      background-color: #0288d1;
+      overflow: auto;
+      margin-top: 40px;
+    }
+
+    .go-to-offers a {
+      text-decoration: none;
+    }
+
+    .go-to-offers-text {
+      padding-top: 17px;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      letter-spacing: 0.7px;
+      color: #ffffff;
+    }
+
+    .go-to-offers-image {
+      margin-left: 4px;
+      vertical-align: middle;
+      margin-bottom: 0.75em;
+    }
+
+    .expiration-date {
+      margin-top: 16px;
+      padding-bottom: 48px;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fc4c02;
+      contain: layout;
+    }
+
+    .footer-contact {
+      width: 640px;
+      background-color: #f5f7fa;
+    }
+
+    .footer-contact-text {
+      padding: 24px 48px 24px 48px;
+      width: 545px;
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+    }
+
+    .footer-contact-text .text-link {
+      color: #0280c4;
+    }
+
+    .box-general {
+      width: 640px;
+    }
+
+    .box-footer a {
+      text-decoration: none;
+      color: #455a64;
+    }
+
+    /* header */
+    @media only screen and (max-width: 480px) {
+      .rectangle-orange {
+        width: 360px;
+      }
+
+      .logo-clip {
+        width: 48px;
+        height: 48px;
+      }
+
+      .congratulations-text {
+        width: 328px;
+      }
+
+      .loan-reason {
+        width: 328px;
+      }
+
+      .loan-options {
+        width: 328px;
+      }
+
+      .loan-payment-benefit {
+        width: 328px;
+      }
+
+      .steps-details-text-div {
+        width: 276px;
+      }
+
+      .steps-details-text-single-div {
+        margin-top: 0px;
+      }
+
+      .go-to-offers {
+        width: 328px;
+      }
+
+      .expiration-date {
+        padding-bottom: 40px;
+      }
+
+      .footer-contact {
+        width: 360px;
+      }
+
+      .footer-contact-text {
+        padding: 24px 16px 24px 16px;
+        width: 328px;
+      }
+
+      .box-general {
+        width: 360px;
+      }
+
+      .merchant-loan {
+        width: 285px;
+      }
+
+      .steps-header {
+        width: 328px;
+      }
+
+      .steps-details-div {
+        width: 328px;
+      }
+
+      .go-to-offers-text {
+        padding-top: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <div class="box-general">
+      <div class="rectangle-orange"></div>
+      <div class="logo-clip-credi-clip">
+        <img src="https://dev-ses-email-templates-assets.s3.amazonaws.com/loans/logo-clip-crediclip.png" alt="logo-clip">
+      </div>
+      <div class="congratulations-text">
+        ¡Felicidades, {{merchant_name}}!<br />
+        Credi Clip® te da hasta ${{pre_approval_value}} pesos
+      </div>
+      <img src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/merchant-loan.png" class="merchant-loan">
+      <div class="loan-reason">
+        Gracias a tu buen historial con Clip te ofrecemos un adelanto de ventas para que crezcas tu negocio.
+      </div>
+      <div class="loan-options">
+        ¿Publicidad, mobiliario, nuevos productos? Alcanza tu meta con Credi Clip®.
+      </div>
+      <div class="credi-clip">
+        <img src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/credi-clip.png">
+      </div>
+      <div class="steps-header">
+        ¿Qué tengo qué hacer?
+      </div>
+      <div class="steps-details-div">
+        <div class="steps-details-image-div">
+          <img src="https://dev-ses-email-templates-assets.s3.amazonaws.com/loans/icon_step_01.png">
+        </div>
+        <div class="steps-details-text-div">
+          <div class="steps-details-text-single-div">
+          Elige una de las 3 ofertas disponibles para ti.
+          </div>
+        </div>
+      </div>
+      <div class="steps-details-div">
+        <div class="steps-details-image-div">
+          <img src="https://dev-ses-email-templates-assets.s3.amazonaws.com/loans/icon_step_02.png">
+        </div>
+        <div class="steps-details-text-div">
+          Envía tu solicitud (hazlo desde tu app Clip o tu computadora).
+        </div>
+      </div>
+      <div class="steps-details-div">
+        <div class="steps-details-image-div">
+          <img src="https://dev-ses-email-templates-assets.s3.amazonaws.com/loans/icon_step_03.png">
+        </div>
+        <div class="steps-details-text-div">
+          Recibe tu Credi Clip® en tu cuenta en 24 horas, de lunes a viernes.
+        </div>
+      </div>
+      <div class="loan-payment-benefit">
+        Paga tu Credi Clip® con un porcentaje de tus ventas diarias. No necesitas aval.
+      </div>
+      <div class="go-to-offers">
+        <a href="{{merchant_dashboard_url}}" target="_blank">
+          <div class="go-to-offers-text">
+            DESCUBRIR MIS OFERTAS
+            <span class="go-to-offers-image"><img width="15.6" height="15.2"
+                src="https://s3.amazonaws.com/dev-ses-email-templates-assets/loans/arrow-forward.png"></span>
+          </div>
+        </a>
+      </div>
+      <div class="expiration-date">
+       Tus ofertas vencen el {{expiration_date_local}}
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact-text">
+          ¿Necesitas ayuda? Nuestro equipo de Customer Happiness® te atiende sin menú de espera.
+          <br /><br />
+          Llámanos o mándanos un WhatsApp al<a class="text-link" target="_blank"
+            href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data="> 55 6393-2323</a> de lunes a viernes de 8:30 a 20:30 h, sábados y domingos de 10 a 17 h. 
+          Envía un correo a <a class="text-link" target="_blank"
+          href="mailto:help@clip.mx">help@clip.mx</a> o chatea con una persona en <a class="text-decoration" target="_blank"
+          href="https://www.clip.mx">www.clip.mx.</a>
+        </div>
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>

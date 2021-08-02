@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>ClipMx</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+    * {
+      font-family: 'Barlow', sans-serif !important;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    .rectangle-orange {
+      width: 640px;
+      height: 4px;
+      background-color: #fc4c02;
+    }
+
+    .logo-clip {
+      margin: 36px 0 30px 0;
+      width: 58px;
+      height: 58px;
+    }
+
+    .header-text {
+      margin: 0px 0 0px 0;
+      width: 544px;
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.4px;
+      text-align: center;
+      color: #323232;
+    }
+
+    .image-revision {
+      margin: 32px 0 30px 0;
+      width: 216px;
+      height: 215px;
+      object-fit: contain;
+    }
+
+    .body-message {
+      margin: 0px 0 32px 0;
+      width: 544px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+    }
+
+    .footer-contact {
+      width: 640px;
+      background-color: #f5f7fa;
+    }
+
+    .footer-contact-text {
+      padding: 24px 48px 24px 48px;
+      width: 545px;
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.46;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+    }
+
+    .footer-contact-text .text-link {
+      color: #0280c4;
+    }
+
+    .box-general {
+      width: 640px;
+    }
+
+    .logo-crediclip {
+      margin: 0px 0 37px 0;
+      width: 216px;
+      height: 49px;
+    }
+
+    .header-separator {
+      display: inline-block;
+      background-color: #d8d8d8;
+      margin: 0px 18px 30px 18px;
+      width: 1px;
+      height: 61px;
+    }
+
+    .request-status {
+      width: 544px;
+      height: 83px;
+      border-radius: 2px;
+      background-color: #fff6f2;
+      margin: 0px 0 24px 0;
+    }
+
+    .status-separator {
+      display: block;
+      width: 492px;
+      height: 1px;
+      background-color: #ffddce;
+    }
+
+    .status-text {
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fc4c02;
+      text-align: left;
+      padding: 10px 0 10px 24px;
+    }
+
+    .solicitud-text {
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fc4c02;
+      text-align: left;
+      padding: 10px 0 10px 24px;
+    }
+
+    .revision-text {
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #282121;
+      text-align: right;
+      padding: 10px 24px 10px 0;
+    }
+
+    .amount-text {
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #282321;
+      text-align: right;
+      padding: 10px 24px 10px 0;
+    }
+
+    .status-table {
+      width: 100%;
+    }
+
+    /* header */
+    @media only screen and (max-width: 480px) {
+      .rectangle-orange {
+        width: 360px;
+      }
+
+      .logo-clip {
+        width: 43px;
+        height: 43px;
+      }
+
+      .header-text {
+        width: 328px;
+        font-family: Barlow;
+        font-size: 24px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #323232;
+
+      }
+
+      .body-message {
+        width: 328px;
+        font-family: Barlow;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #323232;
+      }
+
+      .footer-contact {
+        width: 360px;
+      }
+
+      .footer-contact-text {
+        padding: 24px 0 24px 0;
+        width: 328px;
+      }
+
+      .box-general {
+        width: 360px;
+      }
+
+      .image-revision {
+        margin: 26px 0 16px 0;
+        width: 160px;
+        height: 159px;
+      }
+
+      .logo-crediclip {
+        width: 160px;
+        height: 36px;
+        margin: 0px 0 34px 0;
+      }
+
+      .header-separator {
+        width: 1px;
+        height: 45px;
+      }
+
+      .request-status {
+        width: 328px;
+        height: 83px;
+        border-radius: 2px;
+        background-color: #fff6f2;
+        margin: 0px 0 24px 0;
+      }
+
+      .status-separator {
+        display: block;
+        width: 296px;
+        height: 1px;
+        background-color: #ffddce;
+      }
+
+      .status-text {
+        font-family: Barlow;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fc4c02;
+        text-align: left;
+        padding: 10px 0 10px 14px;
+      }
+
+      .solicitud-text {
+        font-family: Barlow;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #fc4c02;
+        text-align: left;
+        padding: 10px 0 10px 14px;
+      }
+
+      .revision-text {
+        font-family: Barlow;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #282121;
+        text-align: right;
+        padding: 10px 14px 10px 0;
+      }
+
+      .amount-text {
+        font-family: Barlow;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #282321;
+        text-align: right;
+        padding: 10px 14px 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <div class="box-general">
+      <div class="rectangle-orange"></div>
+      <div>
+        <img src="{{assetsUrl}}/loans/clip-logo.png" alt="logo clip"
+          class="logo-clip">
+        <span class="header-separator"></span>
+        <img src="{{assetsUrl}}/loans/logo-crediclip-hd.png" alt="logo-crediclip"
+          class="logo-crediclip">
+      </div>
+      <div class="header-text">
+        Solicitud en revisión
+      </div>
+      <img src="{{assetsUrl}}/loans/revision-icon.png" class="image-revision" alt="imagen promo">
+      <div class="request-status">
+        <div>
+          <table class="status-table">
+            <tr>
+              <td class="status-text"><span>Estatus:</span></td>
+              <td class="revision-text"><span>En revisión</span></td>
+            </tr>
+          </table>
+        </div>
+        <span class="status-separator"></span>
+        <div>
+          <table class="status-table">
+            <tr>
+              <td class="solicitud-text"><span>Solicitud por:</span>
+              <td class="amount-text"><span>${{amount}}</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="body-message">
+        <p>Hola, {{merchant_name}}</p><br/>
+        <p>Gracias por tu interés en Credi Clip®. ¡Ya estamos revisando tu solicitud!</p><br/>
+        <p>En 24 horas (de lunes a viernes) nos pondremos en contacto contigo a través de este medio para darte una respuesta.</p>
+      </div>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-contact-text">
+        <p>¿Necesitas ayuda? Nuestro equipo de Customer Happiness® te atiende sin menú de espera.</p><br/>
+        <p> Llámanos o mándanos un WhatsApp al <a class="text-link" target="_blank"
+          href="https://api.whatsapp.com/send?phone=5215563932323&text=&source=&data=">55 6393-2323</a> de lunes a viernes de 8:30 a 20:30 h,
+          sábados y domingos de 10 a 17 h. Envía un correo a <a class="text-link" target="_blank"
+          href="mailto:help@clip.mx">help@clip.mx</a> o chatea con una persona en <a class="text-link" target="_blank"
+          href="https://www.clip.mx">www.clip.mx</a>.</p>
+      </div>
+    </div>
+    </div>
+  </center>
+</body>
+
+</html>

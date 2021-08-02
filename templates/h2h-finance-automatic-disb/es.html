@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!--<![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+        <xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+          table {border-collapse: collapse;}
+          table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+          img {-ms-interpolation-mode: bicubic;}
+        </style>
+        <![endif]-->
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <!-- Barlow Font -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            max-height: 1200px !important;
+            margin: 0px;
+            font-family: 'Barlow', 'Roboto', helvetica, sans-serif;
+            box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -webkit-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -moz-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+        }
+
+        img.max-width {
+            max-width: 100% !important;
+        }
+
+        .emailBody {
+            border-top: 4px solid rgb(252, 76, 2);
+            padding-bottom: 90px;
+            padding-top: 20px;
+            text-align: center !important;
+        }
+
+        table {
+            width: 90%;
+            padding: 10px;
+            border: 10px solid rgb(243, 243, 243);
+            background: rgb(243, 243, 243);
+            border-radius: 5px;
+            margin: auto;
+            box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -webkit-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+            -moz-box-shadow: 0px 8px 40px -12px rgb(177, 177, 177) !important;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(49, 49, 49);
+            background: white;
+            border-radius: 3px;
+            padding: 7px;
+        }
+
+        .invisibleTable {
+            border: 0;
+            text-align: left;
+            border-spacing: 1px;
+            padding: 1px;
+        }
+
+        @media only screen and (max-width: 560px) {
+            body {
+                font-size: 10px !important;
+                margin: 0 !important;
+            }
+            td,
+            th {
+                padding: 5px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+        <center class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+            <div>
+                <div style="font-size:6px;padding:20px 0px 20px 0px;" valign="top" align="center">
+                    <img class="max-width" border="0" style="display:block;color:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;font-size:16px;"
+                        width="60" height="60" src="https://s3-us-west-2.amazonaws.com/747733430d60b80427a2d4f5d7d73c26/clip_logo.png"
+                        alt="logo">
+                </div>
+                <div align="left" style="margin-left: 30px;">
+                  <h2 style="color: rgb(252, 76, 2);">Dispersión Automática - {{dsp_type}}</h2>
+                </div>
+            </div>
+
+        </center>
+
+        <div class='emailBody'>
+            <h4>
+               Hola, te notificamos que el proceso automático de dispersión se hará por {{dsp_method}}, el detalle de pagos es el siguiente:
+            </h4>
+            <table>
+                <tr>
+                    <th>Vía de Dispersión</th>
+                    <th>Número de Pagos</th>
+                    <th>Monto de pago a Merchants</th>
+                    <th>Monto de Comisiones</th>
+                    <th>IVA</th>
+                    <th>Total a Fondear</th>
+                    <th>Cuenta Bancaria a Fondear</th>
+                    <th>Banco</th>
+                </tr>
+                <tr>
+                    <td>{{dsp_method}}</td>
+                    <td>{{number_of_payments.big_decimal}}</td>
+                    <td>{{total_amount_to_be_disbursed}}</td>
+                    <td>
+                        <table class="invisibleTable">
+                          <tr class="invisibleTable">
+                            <td class="invisibleTable">{{dsp_method}}</td>
+                            <td class="invisibleTable">{{dsp_method_commissions}}</td>
+                          </tr>
+                          <tr class="invisibleTable">
+                            <td class="invisibleTable">SPEI</td>
+                            <td class="invisibleTable">{{spei_commissions}}</td>
+                          </tr>
+                          <tr class="invisibleTable">
+                            <td class="invisibleTable">Total</td>
+                            <td class="invisibleTable">{{total_comissions}}</td>
+                          </tr>
+                        </table>
+                    </td>
+                    <td>{{iva}}</td>
+                    <td>{{total_to_deposit}}</td>
+                    <td>{{bank_account}}</td>
+                    <td>{{bank}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
