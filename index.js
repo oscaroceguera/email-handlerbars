@@ -3,12 +3,12 @@ const fs = require("fs");
 const handlebars = require("handlebars");
 // const list = require("./templateList");
 
-const { argv } = require('process');
+const { argv } = require("process");
 
-let templateSearch
+let templateSearch;
 
-console.log('argv =>', argv[2])
-templateSearch = argv[2]
+console.log("argv =>", argv[2]);
+templateSearch = argv[2];
 
 http
   .createServer((req, res) => {
@@ -25,5 +25,5 @@ http
     res.end(html);
   })
   .listen(8000, () => {
-    console.log('http://localhost:8008')
+    console.log("http://localhost:8000");
   });

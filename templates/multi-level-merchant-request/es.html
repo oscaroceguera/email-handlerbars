@@ -21,7 +21,10 @@
       rel="stylesheet"
   />
   <style type="text/css">
+    @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,400i,500,500i,600,600i,700,700i&display=swap");
+
     * {
+      font-family: "Barlow", sans-serif !important;
       box-sizing: border-box;
     }
 
@@ -99,7 +102,7 @@
     .inviteAcceptBtn {
       background-color: #FC4C02;
       border-radius: 8px;
-      color: #fff;
+      color: #fff !important;
       cursor: pointer;
       display: block;
       font-family: "Barlow";
@@ -121,13 +124,13 @@
     li {
       display: flex;
       padding: 16px 0;
-      align-items: center;
+      margin: 0;
     }
     .liIcon{
       margin-right: 8px;
     }
     .liIcon > img {
-      width: 42px;
+      width: 32px;
     }
     .liText {
       font-family: "Barlow";
@@ -140,6 +143,9 @@
     a {
       text-decoration: none;
       cursor: pointer;
+    }
+    .helpContainer-info > a {
+      color:#FC4C02 !important;
     }
     .clipLinks {
       color:#FC4C02;
@@ -163,7 +169,7 @@
       padding-top: 32px;
     }
     .footer-helps-links {
-      color: #001724;
+      color: #001724 !important;
       text-decoration: none;
       cursor: pointer;
     }
@@ -182,6 +188,20 @@
       ul {
         width: 410px;
       }
+      .paddingTop {
+        padding-top: 6px;
+      }
+      .clipLinks {
+        color:#FC4C02;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .footer-helps-links {
+        color: #001724 !important;
+        text-decoration: none;
+        cursor: pointer;
+      }
+     
     }
   </style>
 </head>
@@ -212,13 +232,13 @@
         <ul>
           <li>
             <div class='liIcon'>
-              <img src="{{assetsUrlIcons}}email.png"  />
+              <img src="{{assetsUrl}}/bum/icon_check.png" />
             </div>
-            <div class="liText">Comparte información de manera práctica y sencilla</div>
+            <div class="liText paddingTop">Comparte información de manera práctica y sencilla</div>
           </li>
           <li>
             <div class='liIcon'>
-              <img src="{{assetsUrlIcons}}email.png"  />
+              <img src="{{assetsUrl}}/bum/icon_security.png" />
             </div>
             <div class="liText">
               Seguridad al compartir datos de tu unidad a <strong>{{parentMerchantName}}</strong>
@@ -226,10 +246,10 @@
           </li>
           <li>
             <div class='liIcon'>
-              <img src="{{assetsUrlIcons}}email.png"  />
+              <img src="{{assetsUrl}}/bum/icon_clock.png" />
             </div>
-            <div class="liText">
-              Agiliza la gestión, reporteo y análisis a la cuenta principal
+            <div class="liText paddingTop">
+                Agiliza la gestión, reporteo y análisis a la cuenta principal
             </div>
           </li>
         </ul>
@@ -262,7 +282,7 @@
           >
             <img
               src="{{assetsUrl}}/welcome-email/twitter.png"
-              alt="clip-facebook"
+              alt="clip-twitter"
               class="logo-social"
             />
           </a>
@@ -274,7 +294,7 @@
           >
             <img
               src="{{assetsUrl}}/welcome-email/youtube.png"
-              alt="clip-facebook"
+              alt="clip-youtube"
               class="logo-social"
             />
           </a>
@@ -286,7 +306,7 @@
           >
             <img
               src="{{assetsUrl}}/welcome-email/instagram.png"
-              alt="clip-facebook"
+              alt="clip-instagram"
               class="logo-social"
             />
           </a>
